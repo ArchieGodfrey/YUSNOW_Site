@@ -4,10 +4,12 @@ import Input from '../components/input';
 
 function Dashboard() {
   return (
-    <div>
+  <div id="container">
+    <div className="template">
         BASIC BITCH TEMPLATE
-        <Input />
     </div>
+    <Input />
+  </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input = (placeholder) => (
+const Input = ({ placeholder }) => (
     <input placeholder={placeholder} />
 );
 
