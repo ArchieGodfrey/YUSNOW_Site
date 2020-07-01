@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
@@ -17,7 +18,6 @@
   background-image: url("./background-images/Background-Image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,8 +29,7 @@
 }
 
 .App-header:hover {
-  background-image: url("./background-images/Background-Image-2.jpg");
-
+  background-image: url("./background-images/Background-Image-3.jpg");
 }
 
 .App-link {
@@ -48,7 +47,7 @@
 
 /* This will change the styles of all buttons */
 button {
-  background-color: #961414;
+  background-color: black;
   color: #fff;
   height: calc(40px + 1vw);
   width: calc(100px + 4vw);
@@ -57,14 +56,17 @@ button {
   box-shadow: 1px 1px 5px rgb(31, 0, 0);
   font-size: 1rem;
   transition: background-color 1s ease;
+  opacity: 0.5;
+  transition: opacity 0.5s;
 }
 
 button:focus {
-  border-color: white;
+  border-color: grey;
   outline: none;
 }
 
 button:hover {
-  border: 1px solid white;
-  background-color: #ff0000;
+  border: 1px solid grey;
+  background-color: black;
+  opacity: 0.9;
 }
