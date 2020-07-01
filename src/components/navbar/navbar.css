@@ -1,0 +1,13 @@
+.navbar {
+    /*position:sticky; */
+    background-color:#454e63;
+    height:100px;
+    width:100%;
+    /* top:0; */
+}
+
+.image {
+    height:20px;
+    width:50px;
+    z-index: 10;
+}
