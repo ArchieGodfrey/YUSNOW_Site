@@ -1,10 +1,45 @@
 /* This is using the 'id' of an element in order to find and style it */
 #container {
     display: flex;
-    flex-direction: row;
+    min-height: 100vh;
+    background-color: #282c34;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* This is using the 'className' of an element in order to find and style it */
 .template {
     margin-right: 25px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.margin {
+    margin-left: 2rem;
+    
+}
+
+@media (max-width: 250px) {
+    .margin {
+        margin: 15px 0 0 0;
+    }
+}
+
+.para {
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.image {
+    max-height: 400px;
+    max-width: 600px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 2s;
 }

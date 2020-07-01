@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* This will change the styles of all buttons */
+button {
+  background-color: #961414;
+  color: #fff;
+  height: calc(40px + 1vw);
+  width: calc(100px + 4vw);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(31, 0, 0);
+  font-size: 1rem;
+  transition: background-color 1s ease;
+}
+
+button:focus {
+  border-color: white;
+  outline: none;
+}
+
+button:hover {
+  border: 1px solid white;
+  background-color: #ff0000;
+}
