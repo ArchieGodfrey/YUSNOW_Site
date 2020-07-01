@@ -35,11 +35,3 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
-
-.image {
-    max-height: 400px;
-    max-width: 600px;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 2s;
-}
