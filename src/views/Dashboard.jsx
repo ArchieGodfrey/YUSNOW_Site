@@ -18,9 +18,9 @@ function Dashboard() {
               />
         </div>
       <div className="buttonBar">
-        <button>Merchandise</button>
-        <button>Calendar</button>
-        <button>Sponsors</button>
+        <button className="buttonMargin">Merchandise</button>
+        <button className="buttonMargin">Calendar</button>
+        <button className="buttonMargin">Sponsors</button>
       </div>
       <div className="welcomeMessage">
         {"Welcome to the University of York Ski and Snowboard Society!"}
