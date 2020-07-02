@@ -10,31 +10,39 @@
     font-family: DaddyDay;
 }
 
-.image {
-    height:100px;
-    width:auto;
-    z-index: 10;
-    opacity: 1;
+.navbar:hover {
+    opacity: 0.9;
 }
 
-.title {
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: DaddyDay;
-    letter-spacing: 5px;
-}
+.navbar
+    .image {
+        height:100px;
+        width:auto;
+        z-index: 10;
+        opacity: 1;
+    }
 
-.slogon {
-    color: white;
-    font-weight: 100;
-    font-size: 20px;
-    
-}
+.navbar
+    .title {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: DaddyDay;
+        letter-spacing: 5px;
+    }
 
-.col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+.navbar
+    .slogon {
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+        
+    }
+
+.navbar
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 

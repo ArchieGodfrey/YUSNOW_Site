@@ -1,17 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Dashboard from './views/Dashboard';
 import Navbar from './components/navbar/navbar';
 import SponsorBar from './components/sponsorBar/sponsorBar';
+import MerchCard from './views/MerchCard/MerchCard';
 
 function App() {
-  const [showDashboard, setShowDashboard] = React.useState(false); 
   return (
     <div className="App">
       <Navbar/>
-      <Dashboard/>
-      <SponsorBar/>
+      <div className="Scrollview">
+        <Dashboard/>
+        <MerchCard />
+        <SponsorBar/>
+      </div>
+      
+      
     </div>
     
   );

@@ -1,11 +1,10 @@
 .App {
+  height: 100vh;
   text-align: center;
   background-color: black;
   font-family: DaddyDay;
-  background-image: url("./background-images/Background-Image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,37 +12,45 @@
   font-size: calc(10px + 2vmin);
   color: white;
   animation: background 30s infinite;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* This will change the styles of all buttons */
+button {
+  background-color: black;
+  color: #fff;
+  height: calc(40px + 1vw);
+  width: calc(100px + 4vw);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(31, 0, 0);
+  font-size: 1rem;
+  transition: background-color 1s ease;
+  opacity: 0.5;
+  transition: opacity 0.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:focus {
+  border-color: black;
+  outline: none;
+}
+
+button:hover {
+  border: 1px solid black;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.App 
+  .Scrollview {
+      margin-top: 20vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
   }
-}
 
-@font-face {
-  font-family: DaddyDay;
-  src: url("./assets/DaddyDay.woff");
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Scrollview::-webkit-scrollbar {
+      display: none  
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 @keyframes background {
   0% {
@@ -66,30 +73,14 @@
   }
 }
 
-/* This will change the styles of all buttons */
-button {
-  background-color: transparent;
-  border-color: transparent;
-  color: white;
-  height: calc(80px + 1vw);
-  width: calc(200px + 4vw);
-  border-radius: 5px;
-  border: none;
-  font-size: 30px;
-  transition: border-color 1s ease;
-  transition: background-color 1s ease;
-  opacity: 1;
-  font-family:DaddyDay;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-button:focus {
-  border-color: black;
-  outline: none;
-}
-
-button:hover {
-  background-color: black;
-  border: 1px solid black;
-  opacity: 0.6;
+@font-face {
+  font-family: DaddyDay;
+  src: url("./assets/DaddyDay.woff");
 }
 
