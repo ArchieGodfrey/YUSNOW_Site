@@ -25,7 +25,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  animation: background 5s infinite;
+  animation: background 15s infinite;
 }
 
 
@@ -49,17 +49,20 @@
   0% {
     background-image: url("./background-images/Background-Image-1.jpg");
   }
-  25% {
+  20% {
     background-image: url("./background-images/Background-Image-2.jpg");
   }
-  50% {
+  40% {
     background-image: url("./background-images/Background-Image-3.jpg");
   }
-  75% {
+  60% {
     background-image: url("./background-images/Background-Image-4.jpg");
   }
-  100% {
+  80% {
     background-image: url("./background-images/Background-Image-5.jpg");
+  }
+  100% {
+    background-image: url("./background-images/Background-Image-1.jpg");
   }
 }
 
