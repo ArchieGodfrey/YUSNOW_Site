@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Dashboard from './views/Dashboard';
 import Navbar from './components/navbar/navbar';
+import SponsorBar from './components/sponsorBar/sponsorBar';
 import MerchCard from './views/MerchCard/MerchCard';
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
         <MerchCard />
         <MerchCard />
       </div>
+      <Dashboard/>
+      <SponsorBar/>
     </div>
     
   );
