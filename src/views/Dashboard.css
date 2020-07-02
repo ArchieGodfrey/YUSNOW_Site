@@ -1,0 +1,38 @@
+.dashboard {
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: DaddyDay;
+    flex-direction: column;
+}
+
+.buttonBar {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.mainImage {
+    height:300px;
+    width:auto;
+    z-index: 10;
+    opacity: 1;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    height:300px;
+    width:340px;
+    background-image: url("../assets/triangle.png");
+    background-size: cover;
+}
+
+.welcomeMessage {
+    font-family: DaddyDay;
+    font-size: 30px;
+}

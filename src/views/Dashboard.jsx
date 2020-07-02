@@ -4,10 +4,29 @@ import React from 'react';
 import './Dashboard.css';
 
 // So this a function with name 'Dashboard' and it returns a div and an Input
-function Dashboard({ changeScreen }) {
-  const [showImage, setShowImage] = React.useState(0); 
+function Dashboard() {
   return (
-  <div/>
+    <div className="dashboard">
+        <div 
+                  
+                  className="imageContainer"
+                  
+              >
+        <img 
+                  src={require('../assets/YUSNOW_LOGO.png')} 
+                  className="mainImage"
+              />
+        </div>
+      <div className="buttonBar">
+        <button>Merchandise</button>
+        <button>Calendar</button>
+        <button>Sponsors</button>
+      </div>
+      <div className="welcomeMessage">
+        {"Welcome to the University of York Ski and Snowboard Society!"}
+      </div>
+    </div>
+    
   );
 }
 

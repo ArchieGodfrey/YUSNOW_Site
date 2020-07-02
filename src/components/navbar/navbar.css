@@ -7,12 +7,7 @@
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    transition: opacity 0.5s;
     font-family: DaddyDay;
-}
-
-.navbar:hover {
-    opacity: 0.9;
 }
 
 .image {

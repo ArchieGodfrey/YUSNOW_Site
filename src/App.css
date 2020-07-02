@@ -68,17 +68,18 @@
 
 /* This will change the styles of all buttons */
 button {
-  background-color: black;
-  color: #fff;
-  height: calc(40px + 1vw);
-  width: calc(100px + 4vw);
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  height: calc(80px + 1vw);
+  width: calc(200px + 4vw);
   border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px 5px rgb(31, 0, 0);
-  font-size: 1rem;
+  font-size: 30px;
+  transition: border-color 1s ease;
   transition: background-color 1s ease;
-  opacity: 0.5;
-  transition: opacity 0.5s;
+  opacity: 1;
+  font-family:DaddyDay;
 }
 
 button:focus {
@@ -87,8 +88,8 @@ button:focus {
 }
 
 button:hover {
-  border: 1px solid black;
   background-color: black;
-  opacity: 0.9;
+  border: 1px solid black;
+  opacity: 0.6;
 }
 
