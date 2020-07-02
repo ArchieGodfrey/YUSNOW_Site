@@ -2,20 +2,6 @@
   text-align: center;
   background-color: black;
   font-family: DaddyDay;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-image: url("./background-images/Background-Image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,6 +13,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
   animation: background 30s infinite;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @font-face {
