@@ -10,11 +10,12 @@ function App() {
     <div className="App">
       <Navbar/>
       <div className="Scrollview">
+        <Dashboard/>
         <MerchCard />
-        <MerchCard />
+        <SponsorBar/>
       </div>
-      <Dashboard/>
-      <SponsorBar/>
+      
+      
     </div>
     
   );
