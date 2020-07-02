@@ -7,21 +7,7 @@ import './Dashboard.css';
 function Dashboard({ changeScreen }) {
   const [showImage, setShowImage] = React.useState(0); 
   return (
-  <div id="container">
-    <img
-      className="image"
-      style={{ opacity: showImage}}
-      src={require('../assets/YUSNOW_LOGO.png')}
-      alt="Logo"
-    />
-    <p className="para">
-      Welcome
-    </p>
-    <div className="row">
-      <button onClick={() => setShowImage(1 - showImage)}>{showImage === 0 ? 'Show' : 'Hide'}</button>
-      <button className="margin" onClick={() => changeScreen(false)}>Return Home</button>
-    </div>
-  </div>
+  <div/>
   );
 }
 
