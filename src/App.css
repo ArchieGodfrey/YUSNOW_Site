@@ -1,5 +1,18 @@
 .App {
   text-align: center;
+  background-color: black;
+  font-family: DaddyDay;
+  background-image: url("./background-images/Background-Image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  animation: background 30s infinite;
 }
 
 .App-logo {
@@ -13,15 +26,9 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: DaddyDay;
+  src: url("./assets/DaddyDay.woff");
 }
 
 .App-link {
@@ -36,3 +43,52 @@
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes background {
+  0% {
+    background-image: url("./background-images/Background-Image-1.jpg");
+  }
+  20% {
+    background-image: url("./background-images/Background-Image-2.jpg");
+  }
+  40% {
+    background-image: url("./background-images/Background-Image-3.jpg");
+  }
+  60% {
+    background-image: url("./background-images/Background-Image-4.jpg");
+  }
+  80% {
+    background-image: url("./background-images/Background-Image-5.jpg");
+  }
+  100% {
+    background-image: url("./background-images/Background-Image-1.jpg");
+  }
+}
+
+/* This will change the styles of all buttons */
+button {
+  background-color: black;
+  color: #fff;
+  height: calc(40px + 1vw);
+  width: calc(100px + 4vw);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(31, 0, 0);
+  font-size: 1rem;
+  transition: background-color 1s ease;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+button:focus {
+  border-color: black;
+  outline: none;
+}
+
+button:hover {
+  border: 1px solid black;
+  background-color: black;
+  opacity: 0.9;
+}
+
