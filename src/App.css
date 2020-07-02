@@ -25,12 +25,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  transition: background-image 1s;
+  transition: background-image 0.5s;
 }
 
 .App-header:hover {
   background-image: url("./background-images/Background-Image-3.jpg");
 }
+
+
 
 .App-link {
   color: #61dafb;
@@ -70,3 +72,4 @@ button:hover {
   background-color: black;
   opacity: 0.9;
 }
+

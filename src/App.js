@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Dashboard from './views/Dashboard';
 import Navbar from './components/navbar/navbar';
+import background from './components/background/background';
 
 function App() {
   const [showDashboard, setShowDashboard] = React.useState(false); 
@@ -22,7 +23,9 @@ function App() {
           </button>
         </header>
       )}
+      
     </div>
+    
   );
 }
 
