@@ -25,12 +25,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  transition: background-image 0.5s;
+  animation: background 5s infinite;
 }
 
-.App-header:hover {
-  background-image: url("./background-images/Background-Image-3.jpg");
-}
+
 
 
 
@@ -44,6 +42,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes background {
+  0% {
+    background-image: url("./background-images/Background-Image-1.jpg");
+  }
+  25% {
+    background-image: url("./background-images/Background-Image-2.jpg");
+  }
+  50% {
+    background-image: url("./background-images/Background-Image-3.jpg");
+  }
+  75% {
+    background-image: url("./background-images/Background-Image-4.jpg");
+  }
+  100% {
+    background-image: url("./background-images/Background-Image-5.jpg");
   }
 }
 
