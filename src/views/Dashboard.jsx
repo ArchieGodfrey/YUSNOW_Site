@@ -7,15 +7,12 @@ import './Dashboard.css';
 function Dashboard() {
   return (
     <div className="dashboard">
-        <div 
-                  
-                  className="imageContainer"
-                  
-              >
+        <div className="imageContainer">
         <img 
-                  src={require('../assets/YUSNOW_LOGO.png')} 
-                  className="mainImage"
-              />
+            src={require('../assets/triangle.png')} 
+            className="mainImage"
+            alt="Main"
+          />
         </div>
       <div className="buttonBar">
         <button className="buttonMargin">Merchandise</button>

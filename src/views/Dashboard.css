@@ -20,22 +20,35 @@
 }
 
 .mainImage {
-    height:300px;
-    width:auto;
-    z-index: 10;
-    opacity: 1;
+    max-height: 30vh;
+    width: auto;
+    background-size: cover;
 }
 
 .imageContainer {
-    display: flex;
-    justify-content: center;
-    height:300px;
-    width:340px;
-    background-image: url("../assets/triangle.png");
+    height: 30vh;
+    width: auto;
+    background-image: url("../assets/YUSNOW_LOGO.png");
     background-size: cover;
+    overflow: visible;
 }
 
 .welcomeMessage {
     font-family: DaddyDay;
     font-size: 30px;
 }
+
+@keyframes image-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .mainImage {
+      animation: image-spin infinite 20s linear;
+    }
+  }

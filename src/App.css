@@ -71,12 +71,6 @@ button:hover {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 @font-face {
   font-family: DaddyDay;
   src: url("./assets/DaddyDay.woff");
