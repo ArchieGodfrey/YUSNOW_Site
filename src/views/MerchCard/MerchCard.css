@@ -1,0 +1,44 @@
+.MerchRoot {
+    scroll-snap-align: start;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    background-color: grey;
+    box-shadow: 15px 5px 15px #36a3e291;
+    margin-bottom: 50vh;
+    color: white;
+    padding: 20px
+}
+
+.MerchRoot
+    .header {
+        margin-bottom: 10px;
+    }
+
+.MerchRoot
+    .bar {
+        border-bottom: 2px solid white;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+.MerchRoot
+    .row {
+        display: flex;
+    }
+
+.MerchRoot
+    .image {
+        height: 250px;
+        width: 250px;
+        background-color: white;
+        color: red;
+        margin-right: 20px;
+    }
+
+.MerchRoot
+    .text {
+        margin: 20px 0;
+        color: green;
+    }
+    

@@ -7,6 +7,7 @@ function Navbar() {
             <img 
                 src={require('../../assets/YUSNOW_LOGO.png')} 
                 className="image"
+                alt="Logo"
             />
             <div className="col">
                 <div className="title">

@@ -1,11 +1,10 @@
 .App {
+  height: 100vh;
   text-align: center;
   background-color: black;
   font-family: DaddyDay;
-  background-image: url("./background-images/Background-Image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,57 +12,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   animation: background 30s infinite;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@font-face {
-  font-family: DaddyDay;
-  src: url("./assets/DaddyDay.woff");
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-@keyframes background {
-  0% {
-    background-image: url("./background-images/Background-Image-1.jpg");
-  }
-  20% {
-    background-image: url("./background-images/Background-Image-2.jpg");
-  }
-  40% {
-    background-image: url("./background-images/Background-Image-3.jpg");
-  }
-  60% {
-    background-image: url("./background-images/Background-Image-4.jpg");
-  }
-  80% {
-    background-image: url("./background-images/Background-Image-5.jpg");
-  }
-  100% {
-    background-image: url("./background-images/Background-Image-1.jpg");
-  }
+  overflow: hidden;
 }
 
 /* This will change the styles of all buttons */
@@ -90,5 +39,48 @@ button:hover {
   border: 1px solid black;
   background-color: black;
   opacity: 0.9;
+}
+
+.App 
+  .Scrollview {
+      margin-top: 20vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+  }
+
+  .Scrollview::-webkit-scrollbar {
+      display: none  
+  }
+
+@keyframes background {
+  0% {
+    background-image: url("./background-images/Background-Image-1.jpg");
+  }
+  20% {
+    background-image: url("./background-images/Background-Image-2.jpg");
+  }
+  40% {
+    background-image: url("./background-images/Background-Image-3.jpg");
+  }
+  60% {
+    background-image: url("./background-images/Background-Image-4.jpg");
+  }
+  80% {
+    background-image: url("./background-images/Background-Image-5.jpg");
+  }
+  100% {
+    background-image: url("./background-images/Background-Image-1.jpg");
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: DaddyDay;
+  src: url("./assets/DaddyDay.woff");
 }
 
