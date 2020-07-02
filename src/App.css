@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: black;
+  font-family: DaddyDay;
 }
 
 .App-logo {
@@ -25,12 +26,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  animation: background 15s infinite;
+  animation: background 30s infinite;
 }
 
-
-
-
+@font-face {
+  font-family: DaddyDay;
+  src: url("./assets/DaddyDay.woff");
+}
 
 .App-link {
   color: #61dafb;
@@ -44,6 +46,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 @keyframes background {
   0% {
@@ -82,12 +85,12 @@ button {
 }
 
 button:focus {
-  border-color: grey;
+  border-color: black;
   outline: none;
 }
 
 button:hover {
-  border: 1px solid grey;
+  border: 1px solid black;
   background-color: black;
   opacity: 0.9;
 }
