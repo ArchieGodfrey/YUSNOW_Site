@@ -4,11 +4,14 @@ import "./navbar.css";
 function Navbar() {
     return(
         <div className="navbar">
+            <div className="block"/>
+
             <img 
                 src={require('../../assets/YUSNOW_LOGO.png')} 
                 className="image"
                 alt="Logo"
             />
+            <div className="block"/>
             <div className="col">
                 <div className="title">
                     {"yusnow".toUpperCase()}
