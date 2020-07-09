@@ -12,7 +12,6 @@ function App() {
       <Navbar/>
       <div className="Scrollview">
         <Dashboard/>
-        <MerchCard />
         <SponsorCard/>
         <MerchCard title="About" text="This is some text" right />
         <MerchCard title="Merch" text="This is some text" />
