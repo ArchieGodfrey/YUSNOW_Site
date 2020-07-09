@@ -1,14 +1,21 @@
 .MerchRoot {
-    scroll-snap-align: start;
     display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    background-color: grey;
-    box-shadow: 15px 5px 15px #36a3e291;
+    justify-content: center;
+    scroll-snap-align: start;
     margin-bottom: 50vh;
-    color: white;
-    padding: 20px
 }
+
+.MerchRoot
+    .container {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 80vw;
+        background-color: grey;
+        color: white;
+        box-shadow: 15px 5px 15px #36a3e291;
+    }
 
 .MerchRoot
     .header {
