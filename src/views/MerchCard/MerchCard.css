@@ -23,14 +23,43 @@
         display: flex;
         flex-flow: column;
         padding: 20px;
+        
         width: 60vw;
-        height: 300px;
-        background-color: rgba(0, 0, 0, 0.4);
+        height: 280px;
+        background-color: rgba(255, 255, 255, 255.4); 
         color: white;
     }
 
 .MerchRoot
+    .containerOuter {
+        display: flex;
+        flex-flow: column;
+        width: 70vw;
+        height: 340px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: black;
+    }
+
+.MerchRoot
     .triangleRight {
+        z-index: 1;
+        width: 0; 
+        height: 0; 
+        border-top: 320px solid transparent;
+        border-left: 200px solid rgba(255, 255, 255, 255.4); 
+    }
+
+.MerchRoot
+    .triangleLeft {
+        z-index: 1;
+        width: 0; 
+        height: 0; 
+        border-top: 320px solid transparent;
+        border-right: 200px solid rgba(255, 255, 255, 255.4); 
+    }
+
+.MerchRoot
+    .triangleOuterRight {
         width: 0; 
         height: 0; 
         border-top: 340px solid transparent;
@@ -38,7 +67,7 @@
     }
 
 .MerchRoot
-    .triangleLeft {
+    .triangleOuterLeft {
         width: 0; 
         height: 0; 
         border-top: 340px solid transparent;
@@ -47,12 +76,13 @@
 
 .MerchRoot
     .header {
+        color: black;
         margin-bottom: 10px;
     }
 
 .MerchRoot
     .bar {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
         width: 50%;
         margin-bottom: 20px;
     }
@@ -74,6 +104,6 @@
 .MerchRoot
     .text {
         margin: 20px 0;
-        color: white;
+        color: black;
     }
     
