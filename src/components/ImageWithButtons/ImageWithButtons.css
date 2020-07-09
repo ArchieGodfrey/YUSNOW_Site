@@ -1,8 +1,9 @@
 .ImageWithButtons {
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .ImageWithButtons
@@ -22,6 +23,7 @@
         height: 14px;
         width: 14px;
         border-radius: 14px;
+        margin: 5px;
     }
 
 .ImageWithButtons   
@@ -31,4 +33,5 @@
         width: 10px;
         border-radius: 10px;
         border: 2px solid white;
+        margin: 5px;
     }

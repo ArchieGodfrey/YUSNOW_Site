@@ -12,9 +12,9 @@ function App() {
       <Navbar/>
       <div className="Scrollview">
         <Dashboard/>
-        <SponsorCard/>
         <MerchCard title="About" text="This is some text" right />
         <MerchCard title="Merch" text="This is some text" />
+        <SponsorCard/>
         <SponsorBar/>
       </div>
     </div>
