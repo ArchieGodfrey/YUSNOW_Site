@@ -15,6 +15,16 @@ function SponsorBar() {
                     className="image"
                     alt="Logo"
                 />
+                <img 
+                    src={require('../../assets/sponsor-logos/bro_logo.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/chillys_logo.png')} 
+                    className="image"
+                    alt="Logo"
+                />
             </div>
         </div>
     )
