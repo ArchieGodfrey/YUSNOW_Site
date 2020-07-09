@@ -1,21 +1,25 @@
 import React from 'react';
 import './MerchCard.css';
 
-function MerchCard() {
+function MerchCard({ title, text, imageComponent, right }) {
   return (
-    <div className="MerchRoot">
-      <div className="container">
-        <div className="header">
-              MERCH
-          </div>
-          <div className="bar" />
-          <div className="row">
-              <div className="image">This is an image</div>
-              <div>
-                  <div className="text">This is a t shirt</div>
-                  <div className="text">This is its price</div>
-              </div>
+    <div className={right ? "MerchRoot justifyContent" : "MerchRoot"}>
+      <div className={right ? "rowReverse" : "row"}>
+        <div className={right ? "container alignItems" : "container"}>
+          <div className="header">
+                {title}
             </div>
+            <div className="bar" />
+            <div className="row">
+                {imageComponent && (
+                 imageComponent
+                )}
+                <div>
+                    <div className="text">{text}</div>
+                </div>
+              </div>
+          </div>
+          <div className={right ? "triangleLeft" : "triangleRight"} />
         </div>
     </div>
   );
