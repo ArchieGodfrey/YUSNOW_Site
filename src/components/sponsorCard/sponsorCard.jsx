@@ -1,44 +1,41 @@
 import React from 'react';
 import "./sponsorCard.css";
-
-function nextSlide(slideIndex, setSlideIndex, sponsors) {
-    if (slideIndex < sponsors.length - 1) {
-        setSlideIndex(slideIndex+1)
-    } else {
-        setSlideIndex(0)
-    }
-    console.log(slideIndex)
-}
+import ImageWithButtons from '../ImageWithButtons/ImageWithButtons';
 
 function SponsorCard() {
     const sponsors = [{
-        name:"chillys",description:"Hello",image:""
+        name:"chillys",description:"Hello",image: require('../../assets/sponsor-logos/chillys_logo.png')
     }, {
-        name:"bro",description:"Hello",image:""
+        name:"bro",description:"Hello",image: require('../../assets/sponsor-logos/bro_logo.png')
     }, {
-        name:"fieldtrip",description:"Hello",image:""
+        name:"fieldtrip",description:"Hello",image: require('../../assets/sponsor-logos/fieldtrip_logo.png')
     }]
-    const [slideIndex, setSlideIndex]=React.useState(0)
+
+    const [slideIndex, setSlideIndex]=React.useState(0);
+
     return(
         <div className="sponsorCard">
            <div className="container">
-                <div className="slides" onClick={() => nextSlide(slideIndex, setSlideIndex, sponsors)}>
+               <div className="textContainer">
+                <div>
                     {sponsors[slideIndex].name}
-                    
                 </div>
-                <div className="row">
-                    {sponsors.map((sponsor, index)=>(
-                        index===slideIndex?(
-                            <div className="filledCircle">
-                                
-                            </div>
-                        ) : (
-                            <div className="emptyCircle" onClick={() => setSlideIndex(index)} >
-
-                            </div>
-                        )
-                    ))}
+                <div>
+                    {sponsors[slideIndex].description}
                 </div>
+               </div>
+                <ImageWithButtons
+                    array={sponsors}
+                    slideIndex={slideIndex}
+                    setSlideIndex={setSlideIndex}
+                    slide={
+                        <img
+                            src={sponsors[slideIndex].image}
+                            className="image"
+                            alt="Logo"
+                        />
+                    }
+                />
            </div>
         </div>
     )
