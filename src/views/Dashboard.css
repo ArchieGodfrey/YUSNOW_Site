@@ -27,7 +27,7 @@
 
 .imageContainer {
     height: 30vh;
-    width: auto;
+    width: 30vh;
     background-image: url("../assets/YUSNOW_LOGO.png");
     background-size: cover;
     overflow: visible;

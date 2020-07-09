@@ -7,13 +7,8 @@ import './Dashboard.css';
 function Dashboard() {
   return (
     <div className="dashboard">
-        <div className="imageContainer">
-        <img 
-            src={require('../assets/triangle.png')} 
-            className="mainImage"
-            alt="Main"
-          />
-        </div>
+        <div className="imageContainer"/>
+
       <div className="buttonBar">
         <button className="buttonMargin">Merchandise</button>
         <button className="buttonMargin">Calendar</button>
