@@ -11,7 +11,7 @@ import ToTop from './components/toTop/toTop';
 
 function App() {
   const scrollToRef = (id) => {
-    document.getElementById('ScrollView').scrollTo(0, document.getElementById(id).offsetTop - 150);
+    document.getElementById('ScrollView').scrollBy({ top: document.getElementById(id).offsetTop - 150, behavior: 'smooth'});
   }
   return (
     <div className="App">
