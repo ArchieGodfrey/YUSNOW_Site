@@ -4,10 +4,15 @@ import React from 'react';
 import './toTop.css';
 
 // So this a function with name 'Dashboard' and it returns a div and an Input
-function ToTop() {
+function ToTop({ scrollToRef }) {
   return (
     <div className="toTopRoot">
-        <a href="#top"><button className="buttonMargin">Top</button></a>
+        <button
+          className="buttonMargin"
+          onClick={() => scrollToRef('top')}
+        >
+          Top
+        </button>
     </div>
     
   );

@@ -11,18 +11,18 @@ import ToTop from './components/toTop/toTop';
 
 function App() {
   const scrollToRef = (id) => {
-    document.getElementById('ScrollView').scrollBy({ top: document.getElementById(id).offsetTop - 150, behavior: 'smooth'});
+    document.getElementById('ScrollView').scrollTo({ top: document.getElementById(id).offsetTop - 150, behavior: 'smooth'});
   }
   return (
     <div className="App">
       <Navbar/>
       <div id="ScrollView" className="Scrollview">
         <div className="block" id="top"/>
-        <Dashboard scrollToRef={scrollToRef} />
+        <Dashboard id="dashboard" scrollToRef={scrollToRef} />
         <MerchCard id="about" title="ABOUT" text="This is some text" right />
         <MerchCard id="merchandise" title="MERCHANDISE" text="This is some text" />
         <SponsorCard id="sponsorcard"/>
-        <ToTop/>
+        <ToTop scrollToRef={scrollToRef} />
         <SponsorBar/>
       </div>
     </div>
