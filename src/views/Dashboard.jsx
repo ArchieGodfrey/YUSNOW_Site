@@ -4,15 +4,14 @@ import React from 'react';
 import './Dashboard.css';
 
 // So this a function with name 'Dashboard' and it returns a div and an Input
-function Dashboard() {
+function Dashboard({ scrollToRef }) {
   return (
     <div className="dashboard" id="dashboard">
-        <div className="imageContainer"/>
-
+      <div className="imageContainer"/>
       <div className="buttonBar">
-        <a href="#about"><button className="buttonMargin">About</button></a>
-        <a href="#merchandise"><button className="buttonMargin">Merchandise</button></a>
-        <a href="#sponsorcard"><button className="buttonMargin">Sponsors</button></a>
+        <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
+        <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
+        <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
       </div>
       <div className="welcomeMessage">
         {"Welcome to the University of York Ski and Snowboard Society"}
