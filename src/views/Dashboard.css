@@ -1,5 +1,6 @@
 .dashboard {
     scroll-snap-align: start;
+    scroll-behavior: smooth;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -52,3 +53,5 @@
       animation: image-spin infinite 20s linear;
     }
   }
+
+  

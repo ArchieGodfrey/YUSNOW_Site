@@ -1,7 +1,7 @@
 .MerchRoot {
     display: flex;
     scroll-snap-align: start;
-    margin-bottom: 150px;
+    margin-bottom: 300px; 
 }
 
 .justifyContent {
@@ -24,7 +24,7 @@
         flex-flow: column;
         padding: 20px;
         width: 60vw;
-        height: 300px;
+        height: 600px;
         background-color: rgba(0, 0, 0, 0.4);
         color: white;
     }
@@ -33,21 +33,23 @@
     .triangleRight {
         width: 0; 
         height: 0; 
-        border-top: 340px solid transparent;
-        border-left: 200px solid rgba(0, 0, 0, 0.4);
+        border-top: 640px solid transparent;
+        border-left: 400px solid rgba(0, 0, 0, 0.4);
     }
 
 .MerchRoot
     .triangleLeft {
         width: 0; 
         height: 0; 
-        border-top: 340px solid transparent;
-        border-right: 200px solid rgba(0, 0, 0, 0.4);
+        border-top: 640px solid transparent;
+        border-right: 400px solid rgba(0, 0, 0, 0.4);
     }
 
 .MerchRoot
     .header {
         margin-bottom: 10px;
+        font-family: Corbel;
+        font-size: 60px;
     }
 
 .MerchRoot
@@ -75,5 +77,7 @@
     .text {
         margin: 20px 0;
         color: white;
+        font-family: Corbel;
+        font-size: 20px;
     }
-    
+   

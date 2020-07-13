@@ -1,9 +1,9 @@
 import React from 'react';
 import './MerchCard.css';
 
-function MerchCard({ title, text, imageComponent, right }) {
+function MerchCard({ title, text, imageComponent, right, id }) {
   return (
-    <div className={right ? "MerchRoot justifyContent" : "MerchRoot"}>
+    <div className={right ? "MerchRoot justifyContent" : "MerchRoot"} id={id}>
       <div className={right ? "rowReverse" : "row"}>
         <div className={right ? "container alignItems" : "container"}>
           <div className="header">

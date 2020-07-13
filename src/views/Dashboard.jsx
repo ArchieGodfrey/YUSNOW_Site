@@ -6,16 +6,16 @@ import './Dashboard.css';
 // So this a function with name 'Dashboard' and it returns a div and an Input
 function Dashboard() {
   return (
-    <div className="dashboard">
+    <div className="dashboard" id="dashboard">
         <div className="imageContainer"/>
 
       <div className="buttonBar">
-        <button className="buttonMargin">Merchandise</button>
-        <button className="buttonMargin">Calendar</button>
-        <button className="buttonMargin">Sponsors</button>
+        <a href="#about"><button className="buttonMargin">About</button></a>
+        <a href="#merchandise"><button className="buttonMargin">Merchandise</button></a>
+        <a href="#sponsorcard"><button className="buttonMargin">Sponsors</button></a>
       </div>
       <div className="welcomeMessage">
-        {"Welcome to the University of York Ski and Snowboard Society!"}
+        {"Welcome to the University of York Ski and Snowboard Society"}
       </div>
     </div>
     

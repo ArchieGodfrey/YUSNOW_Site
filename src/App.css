@@ -15,11 +15,11 @@
 /* This will change the styles of all buttons */
 button {
   background-color: transparent;
-  border: 1px solid black;
+  border: 3px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   height: calc(40px + 1vw);
   width: calc(100px + 4vw);
-  border-radius: 5px;  
+  border-radius: 20px;  
   font-size: 30px;
   transition: background-color 1s ease;
   font-family: DaddyDay;
@@ -30,20 +30,31 @@ button:focus {
 }
 
 button:hover {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.3);;
   opacity: 0.9;
 
 }
 
+
 .App 
   .Scrollview {
+    /*
       margin-top: 20vh;
-      overflow-y: scroll;
-      /*scroll-snap-type: y mandatory; */
+       */
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;;
   }
 
   .Scrollview::-webkit-scrollbar {
       display: none  
+  }
+
+
+  .block {
+    height: 200px;
+    width: 100%;
   }
 
 @keyframes background {
@@ -72,3 +83,11 @@ button:hover {
   src: url("./assets/DaddyDay.woff");
 }
 
+@font-face {
+  font-family: Corbel;
+  src: url("./assets/CORBEL.TTF");
+}
+
+a {
+  text-decoration: none;
+}
