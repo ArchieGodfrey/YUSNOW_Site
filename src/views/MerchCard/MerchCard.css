@@ -10,7 +10,6 @@
 
 .alignItems {
     align-items: flex-end;
-    box-shadow: 50px -50px rgba(0, 0, 0, 0.4);
 }
 
 .MerchRoot
@@ -25,8 +24,7 @@
         flex-flow: column;
         width: 70vw;
         height: 640px;
-        background-color: rgba(255, 255, 255, 0.8);
-        box-shadow: 50px 50px rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.4);
         color: black;
     }
 
@@ -35,8 +33,7 @@
         width: 0; 
         height: 0; 
         border-top: 640px solid transparent;
-        border-left: 400px solid rgba(255, 255, 255, 0.8);
-        filter: drop-shadow(50px 50px rgba(0, 0, 0, 0.4));
+        border-left: 400px solid rgba(0, 0, 0, 0.4);
     }
 
 .MerchRoot
@@ -44,8 +41,7 @@
         width: 0; 
         height: 0; 
         border-top: 640px solid transparent;
-        border-right: 400px solid rgba(255, 255, 255, 0.8);
-        filter: drop-shadow(-50px 50px rgba(0, 0, 0, 0.4));
+        border-right: 400px solid rgba(0, 0, 0, 0.4);
     }
 
 .MerchRoot
