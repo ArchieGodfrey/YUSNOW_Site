@@ -16,7 +16,7 @@ function App() {
       <div className="Scrollview">
         <div className="block" id="top"/>
         <Dashboard/>
-        <MerchCard id="about" title="ABOUT" text="This is some text" right />
+        <MerchCard id="about" title="ABOUT" text="Welcome to the University of York Ski and Snowboard society. We are an inclusive club that offers some of the best socials on campus, ski races and most importantly... bi-annual ski trips for our members!" right />
         <MerchCard id="merchandise" title="MERCHANDISE" text="This is some text" />
         <SponsorCard/>
         <ToTop/>

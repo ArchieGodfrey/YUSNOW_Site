@@ -25,6 +25,46 @@ function SponsorBar() {
                     className="image"
                     alt="Logo"
                 />
+                <img 
+                    src={require('../../assets/sponsor-logos/FRISKI.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/Joss.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/panda.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/POW.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/SkiBartlett.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/Sputnik.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/STAR.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/Wasteland.png')} 
+                    className="image"
+                    alt="Logo"
+                />
             </div>
         </div>
     )
