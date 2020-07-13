@@ -21,7 +21,7 @@
 .MerchRoot
     .container {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         width: 70vw;
         height: 640px;
         background-color: rgba(0, 0, 0, 0.4);
