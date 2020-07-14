@@ -18,6 +18,46 @@ function SponsorCard() {
         description:"Hello",
         image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
         link:""
+    }, {
+        name:"Friski",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/FRISKI.png'),
+        link:""
+    }, {
+        name:"Joss",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/Joss.png'),
+        link:""
+    }, {
+        name:"Panda",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/panda.png'),
+        link:""
+    }, {
+        name:"POW",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/POW.png'),
+        link:""
+    }, {
+        name:"Ski Bartlett",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/SkiBartlett.png'),
+        link:""
+    }, {
+        name:"Sputnik",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/Sputnik.png'),
+        link:""
+    }, {
+        name:"STAR",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/STAR.png'),
+        link:""
+    }, {
+        name:"Wasteland",
+        description:"Hello",
+        image: require('../../assets/sponsor-logos/Wasteland.png'),
+        link:""
     }]
 
     const [slideIndex, setSlideIndex]=React.useState(0);

@@ -67,8 +67,8 @@
 
 .MerchRoot
     .image {
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: auto;
         background-color: white;
         color: red;
         margin-right: 20px;
@@ -81,4 +81,36 @@
         font-family: Corbel;
         font-size: 20px;
     }
+
+.MerchRoot
+    .name {
+        font-size: 40px;
+        font-family: Corbel;
+        color: white;
+        margin: 0 20px;
+    }
    
+.MerchRoot
+    .description {
+        font-size: 30px;
+        font-family: Corbel;
+        color: white;
+        margin: 0 20px;
+    }
+
+.MerchRoot
+    .rotateContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .aboutContainer {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .merchContainer {
+        display: flex;
+        justify-content: flex-start;
+    }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './MerchCard.css';
+import ImageWithButtons from '../../components/ImageWithButtons/ImageWithButtons';
 
 function MerchCard({ title, text, imageComponent, right, id }) {
   const merch = [{
@@ -16,47 +17,47 @@ function MerchCard({ title, text, imageComponent, right, id }) {
     image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
 }]
 
-const [slideIndex, setSlideIndex]=React.useState(0);
+const [slideIndexMerch, setSlideIndexMerch]=React.useState(0);
 
 const committee = [{
   name:"Alex Sanderson",
   description:"President",
-  image: require('../../assets/committee-photos/Alex.png'),
+  image: require('../../assets/committee-photos/Alex.jpg'),
 }, {
   name:"Vicki Blake",
   description:"Vice President",
-  image: require('../../assets/sponsor-logos/bro_logo.png'),
+  image: require('../../assets/committee-photos/Vicki.jpg'),
 }, {
   name:"Rachel Gibson",
   description:"Treasurer",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Rachel.jpg'),
 }, {
   name:"Hugh campkin",
   description:"Trip Secretary",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Hugh.jpg'),
 }, {
   name:"Oliver Driver",
   description:"Media and Merch Officer (and co-creator off this awesome website)",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Olly.jpg'),
 }, {
   name:"Charlie Stent",
   description:"Social Secretary",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Charlie.jpg'),
 }, {
   name:"Aarin Popat",
   description:"Social Secretary",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Azza.jpg'),
 }, {
   name:"Elizabeth Baker",
   description:"Race Captain",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Elizabeth.jpg'),
 }, {
   name:"Jack Littlewood",
   description:"Freestyle Captain",
-  image: require('../../assets/sponsor-logos/fieldtrip_logo.png'),
+  image: require('../../assets/committee-photos/Jack.jpg'),
 }]
 
-const [slideIndex, setSlideIndex]=React.useState(0);
+const [slideIndexAbout, setSlideIndexAbout]=React.useState(0);
 
   return (
     <div className={right ? "MerchRoot justifyContent" : "MerchRoot"} id={id}>
@@ -72,6 +73,27 @@ const [slideIndex, setSlideIndex]=React.useState(0);
                 )}
                 <div>
                     <div className="text">{text}</div>
+                    <div className={right ? "aboutContainer" : "merchContainer"}>
+                    <ImageWithButtons
+                      array={committee}
+                      slideIndexAbout={slideIndexAbout}
+                      setSlideIndexAbout={setSlideIndexAbout}
+                      slide={
+                        <div className="rotateContainer">
+                          <img
+                              src={committee[slideIndexAbout].image}
+                              className="image"
+                              alt="Logo"
+                          />
+                          <div className="name">
+                            {committee[slideIndexAbout].name}
+                          </div>
+                          <div className="description">
+                            {committee[slideIndexAbout].description}
+                          </div>
+                        </div>
+                      }/>
+                    </div>
                 </div>
               </div>
           </div>

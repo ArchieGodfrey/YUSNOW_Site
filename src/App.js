@@ -8,7 +8,6 @@ import SponsorCard from './components/sponsorCard/sponsorCard';
 import ToTop from './components/toTop/toTop';
 
 
-
 function App() {
   const scrollToRef = (id) => {
     document.getElementById('ScrollView').scrollTo({ top: document.getElementById(id).offsetTop - 150, behavior: 'smooth'});
@@ -18,9 +17,9 @@ function App() {
       <Navbar/>
       <div id="ScrollView" className="Scrollview">
         <div className="block" id="top"/>
-        <Dashboard/>
+        <Dashboard scrollToRef={scrollToRef} />
         <MerchCard id="about" title="ABOUT" text="Welcome to the University of York Ski and Snowboard society. We are an inclusive club that offers some of the best socials on campus, ski races and most importantly... bi-annual ski trips for our members!" right />
-        <MerchCard id="merchandise" title="MERCHANDISE" text="This is some text" />
+        <MerchCard id="merchandise" title="MERCHANDISE" text="The following merchandise can be bought through the club, by either sending us an email or messaging our social media pages." />
         <SponsorCard id="sponsorcard"/>
         <ToTop scrollToRef={scrollToRef} />
         <SponsorBar/>
