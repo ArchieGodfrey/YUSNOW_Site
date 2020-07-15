@@ -51,16 +51,16 @@ function App() {
     image: require('./assets/committee-photos/Jack.jpg'),
   }]
   const merch = [{
-    name:"Quarter-Zip",
-    description:"",
-    image: require('./assets/merchandise/Quarter-zip.jpg'),
+    name:"Black Tee",
+    description:"Chips",
+    image: require('./assets/merchandise/Black-Tee-Temp.jpg'),
 }, {
-    name:"Tee 1",
-    description:"",
+    name:"Grey Tee",
+    description:"Chips",
     image: require('./assets/merchandise/Grey-tee-temp.jpg'),
 }, {
-    name:"Tee 2",
-    description:"",
+    name:"Pink Tee",
+    description:"Chips",
     image: require('./assets/merchandise/Pink_Tee.jpg'),
 }];
 

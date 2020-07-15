@@ -9,7 +9,7 @@ function ImageWithButtons({ array, slide, slideIndex, setSlideIndex }) {
 
     return(
         <div className="ImageWithButtons">
-           <div className="center" onClick={() => nextSlide(slideIndex, setSlideIndex, array)}>
+           <div className="center" onClick={() => nextSlide(slideIndex, setSlideIndex, array)} style={{cursor:"pointer"}}>
                {slide}
            </div>
            <div className="center">

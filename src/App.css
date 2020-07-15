@@ -57,22 +57,22 @@ button:hover {
 
 @keyframes background {
   0% {
-    background-image: url("./background-images/Background-Image-1.jpg");
+    background-image: url("./background-images/Background-Image-6.jpg");
   }
   20% {
-    background-image: url("./background-images/Background-Image-2.jpg");
+    background-image: url("./background-images/Background-Image-4.jpg");
   }
   40% {
     background-image: url("./background-images/Background-Image-3.jpg");
   }
   60% {
-    background-image: url("./background-images/Background-Image-4.jpg");
+    background-image: url("./background-images/Background-Image-2.jpg");
   }
   80% {
     background-image: url("./background-images/Background-Image-5.jpg");
   }
   100% {
-    background-image: url("./background-images/Background-Image-1.jpg");
+    background-image: url("./background-images/Background-Image-6.jpg");
   }
 }
 

@@ -25,7 +25,7 @@ function SponsorCard() {
         link:"www.friskiwear.com/"
     }, {
         name:"Joss",
-        description:"The energy drink power to keep your night flowing. Order on the Extra Joss webshop!",
+        description:"The energy drink powder to keep your night flowing. Order on the Extra Joss webshop! Joss energy powder works well even as a mixer, so load up on VodkaJoss when you're cruising the mountain slopes and bars!",
         image: require('../../assets/sponsor-logos/Joss.png'),
         link:"www.extrajoss.eu"
     }, {
