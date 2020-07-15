@@ -78,13 +78,6 @@
         }
 }
 
-@media (max-width: 575px) {
-    .navbar
-        .buttonBar {
-          display: none;
-        }
-}
-
   /*------------------------------------*/
   /*----- Custom Underline Styles ------*/
   /*------------------------------------*/
