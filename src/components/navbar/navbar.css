@@ -59,10 +59,19 @@
         margin: 50px 50px 50px 0;
     }
   
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .navbar
         .buttonBar {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
+          margin: 10px 20px 10px 0;
+          grid-gap: 10px;
         }
-  }
+}
+
+@media (max-width: 575px) {
+    .navbar
+        .buttonBar {
+          display: none;
+        }
+}
