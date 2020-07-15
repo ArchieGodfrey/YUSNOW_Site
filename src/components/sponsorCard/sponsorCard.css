@@ -3,7 +3,7 @@
     justify-content: center;
     scroll-snap-align: center;
     scroll-behavior: smooth;
-    padding: 350px 0 250px 0;
+    padding: 35vw 0 25vw 0;
 }
 
 .sponsorCard 
@@ -69,7 +69,7 @@
         height: 50%;
         color: white;
         margin: 20px;
-        font-size: 20px;
+        font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
         font-family: Corbel;
     }
 
@@ -79,6 +79,7 @@
         margin: 20px;
         font-size: 30px;
         font-family: Corbel;
+        text-decoration-line: underline;
     }
 
 .sponsorCard

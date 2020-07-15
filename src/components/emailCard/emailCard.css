@@ -3,7 +3,7 @@
     justify-content: center;
     scroll-snap-align: center;
     scroll-behavior: smooth;
-    padding: 350px 0 250px 0;
+    padding: 35vw 0 25vw 0;
 }
 
 .emailRoot 
@@ -18,20 +18,20 @@
         padding: 20px;
         scroll-behavior: smooth;
     }
-
+.emailRoot
     .header {
         color: white;
         margin-bottom: 10px;
         font-family: Corbel;
         font-size: 60px;
     }
-
+.emailRoot
     .bar {
         border-bottom: 2px solid white;
         width: 50%;
         margin-bottom: 20px;
     }
-
+.emailRoot
     .row {
         display: flex;
     }
@@ -41,7 +41,7 @@
             flex-direction: column;
         }
     }
-
+.emailRoot
     .contents {
         display: flex;
         flex-direction: column; 
@@ -50,14 +50,15 @@
         flex: 1;
         margin: 0 20px;
     }
-
+.emailRoot
     .text {
         color: white;
         margin-top: 10px;
         font-family: Corbel;
-        font-size: 25px;
+        font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+        text-decoration-line: underline;
     }
-
+.emailRoot
     .input {
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 2px;
@@ -69,27 +70,27 @@
         padding: 5px;
         width: 100%;
     }
-
+.emailRoot
     .input::placeholder {
         color: black;
         opacity: 0.7;
         font-size: 20px;
       }
-
+.emailRoot
     .title {
         color: white;
         margin-top: 10px;
         font-family: Corbel;
-        font-size: 60px;
+        font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
     }
-    
+.emailRoot
     .image {
         height:50px;
         width:auto;
         margin: 20px;
         margin-left: 0px;
     }
-
+.emailRoot
     a {
         display: flex;
         text-decoration: none;
