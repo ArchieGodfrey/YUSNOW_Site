@@ -34,7 +34,7 @@ function EmailCard() {
                                     className="image"
                                     alt="Logo"
                                 />
-                                <div className="text">www.facebook.com/YUsnow/</div>
+                                <div className="text">facebook.com/YUsnow</div>
                             </a>
                             <a href="https://www.instagram.com/yorkunisnow/" target="_blank" rel="noopener noreferrer">
                                 <img 
@@ -42,7 +42,7 @@ function EmailCard() {
                                     className="image"
                                     alt="Logo"
                                 />
-                                <div className="text">www.instagram.com/yorkunisnow/</div>
+                                <div className="text">instagram.com/yorkunisnow</div>
                             </a>
                         </div> 
                     </div>
