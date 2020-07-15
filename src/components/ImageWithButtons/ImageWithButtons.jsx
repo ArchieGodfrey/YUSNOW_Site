@@ -7,6 +7,15 @@ function ImageWithButtons({ array, slide, slideIndex, setSlideIndex }) {
         slideIndex < array.length - 1 ? setSlideIndex(slideIndex+1) : setSlideIndex(0)
     );
 
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+          nextSlide(slideIndex, setSlideIndex, array);
+        }, 3000)
+        return (() => {
+            clearInterval(interval);
+        })
+    }, [slideIndex, setSlideIndex, array])
+
     return(
         <div className="ImageWithButtons">
            <div className="center" onClick={() => nextSlide(slideIndex, setSlideIndex, array)} style={{cursor:"pointer"}}>
