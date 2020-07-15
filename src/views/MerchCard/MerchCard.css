@@ -71,13 +71,10 @@
         width: auto;
         background-color: white;
         color: red;
-        margin-right: 20px;
-        margin-left: 20px;
     }
 
 .MerchRoot
     .text {
-        margin: 20px 0;
         color: white;
         font-family: Corbel;
         font-size: 20px;
@@ -88,7 +85,6 @@
         font-size: 40px;
         font-family: Corbel;
         color: white;
-        margin: 0 20px;
     }
    
 .MerchRoot
@@ -96,7 +92,6 @@
         font-size: 30px;
         font-family: Corbel;
         color: white;
-        margin: 0 20px;
     }
 
 .MerchRoot
