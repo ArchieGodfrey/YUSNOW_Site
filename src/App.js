@@ -20,7 +20,7 @@ function App() {
   }, {
     name:"Vicki Blake",
     description:"Vice President",
-    image: require('./assets/committee-photos/Vicki.jpg'),
+    image: require('./assets/committee-photos/Vicki.png'),
   }, {
     name:"Rachel Gibson",
     description:"Treasurer",
@@ -28,7 +28,7 @@ function App() {
   }, {
     name:"Hugh campkin",
     description:"Trip Secretary",
-    image: require('./assets/committee-photos/Hugh.jpg'),
+    image: require('./assets/committee-photos/Hugh.png'),
   }, {
     name:"Oliver Driver",
     description:"Media and Merch Officer",
@@ -36,11 +36,11 @@ function App() {
   }, {
     name:"Charlie Stent",
     description:"Social Secretary",
-    image: require('./assets/committee-photos/Charlie.jpg'),
+    image: require('./assets/committee-photos/Charlie.png'),
   }, {
     name:"Aarin Popat",
     description:"Social Secretary",
-    image: require('./assets/committee-photos/Azza.jpg'),
+    image: require('./assets/committee-photos/Azza.png'),
   }, {
     name:"Elizabeth Baker",
     description:"Race Captain",
@@ -52,15 +52,15 @@ function App() {
   }]
   const merch = [{
     name:"Black Tee",
-    description:"Chips",
+    description:"",
     image: require('./assets/merchandise/Black-Tee-Temp.jpg'),
 }, {
     name:"Grey Tee",
-    description:"Chips",
+    description:"",
     image: require('./assets/merchandise/Grey-tee-temp.jpg'),
 }, {
     name:"Pink Tee",
-    description:"Chips",
+    description:"",
     image: require('./assets/merchandise/Pink_Tee.jpg'),
 }];
 
