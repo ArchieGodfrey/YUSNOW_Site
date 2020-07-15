@@ -4,9 +4,9 @@ import Dashboard from './views/Dashboard';
 import Navbar from './components/navbar/navbar';
 import SponsorBar from './components/sponsorBar/sponsorBar';
 import MerchCard from './views/MerchCard/MerchCard';
-import SponsorCard from './components/sponsorCard/sponsorCard';
+import SponsorCard from './views/sponsorCard/sponsorCard';
 import ToTop from './components/toTop/toTop';
-import EmailCard from './components/emailCard/emailCard';
+import EmailCard from './views/emailCard/emailCard';
 
 
 function App() {

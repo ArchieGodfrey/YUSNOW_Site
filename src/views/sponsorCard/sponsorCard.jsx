@@ -1,6 +1,6 @@
 import React from 'react';
 import "./sponsorCard.css";
-import ImageWithButtons from '../ImageWithButtons/ImageWithButtons';
+import ImageWithButtons from '../../components/ImageWithButtons/ImageWithButtons';
 
 function SponsorCard() {
     const sponsors = [{
@@ -52,7 +52,7 @@ function SponsorCard() {
         name:"STAR",
         description:"Student Action For Refugees - STAR is a national charity of 34,000 students welcoming refugees to the UK. Together we help volunteer at local refugee projects, campaign to improve the lives of refugees and educate people about refugees and asylum.",
         image: require('../../assets/sponsor-logos/STAR.png'),
-        link:"www.star-network.org.uk"
+        link:"www.star-network.org.uk/index.php"
     }, {
         name:"Wasteland Ski",
         description:"Wasteland Ski are the event producers of the Alps. Running various alpine events for university groups, their seasoned experts will be our portal to the great trips held this year. Wasteland create unique experiences through exceptional production, talent and immersive experiences.",
@@ -75,7 +75,7 @@ function SponsorCard() {
                             {sponsors[slideIndex].description}
                         </div>
                         <a className="link" href={`https://${sponsors[slideIndex].link}`} target="_blank" rel="noopener noreferrer">
-                            Check them out at: <u>{sponsors[slideIndex].link}</u>
+                            Check them out at: <u>{sponsors[slideIndex].name}</u>
                         </a>
                     </div>
                     <ImageWithButtons

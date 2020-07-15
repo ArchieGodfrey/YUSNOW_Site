@@ -38,7 +38,6 @@ function MerchCard({ title, text, right, id, info}) {
             </div>
           </div>
         </div>
-        <div className={right ? "triangleLeft" : "triangleRight"} />
       </div>
     </div>
   );

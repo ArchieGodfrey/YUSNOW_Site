@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         font-family: DaddyDay;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.8);
         width:100%;
         padding: 20px;
         scroll-behavior: smooth;
@@ -54,16 +54,16 @@
     .imageWindow {
         height: 400px;
         width: 400px;
-        max-height: 30vw;
-        max-width: 30vw;
+        max-height: 40vw;
+        max-width: 40vw;
     }
 
 .sponsorCard
     .image {
         width: 100%;
         height: auto;
-        max-height: 30vw;
-        max-width: 30vw;
+        max-height: 40vw;
+        max-width: 40vw;
     }
 
 .sponsorCard

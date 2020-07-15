@@ -36,45 +36,11 @@
     .container {
         display: flex;
         flex-direction: column;
-        width: 70vw;
-        height: 60vh;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.8);
         color: black;
         padding: 10px;
     }
 
-.MerchRoot
-    .triangleRight {
-        width: 0; 
-        height: 0;
-        padding: 10px;
-        border-top: calc(60vh + 20px) solid transparent;
-        border-left: calc(25vw + 20px) solid rgba(0, 0, 0, 0.4);
-    }
-
-.MerchRoot
-    .triangleLeft {
-        width: 0; 
-        height: 0;
-        border-top: calc(60vh + 20px) solid transparent;
-        border-right: calc(25vw + 20px) solid rgba(0, 0, 0, 0.4);
-    }
-
-@media (max-width: 600px) {
-    .MerchRoot
-        .triangleLeft {
-            display: none;
-        }
-    .MerchRoot
-        .triangleRight {
-            display: none;
-        }
-    .MerchRoot
-        .container {
-            width: calc(100vw - 20px);
-            height: 100%;
-        }
-}
 
 .MerchRoot
     .heading {
