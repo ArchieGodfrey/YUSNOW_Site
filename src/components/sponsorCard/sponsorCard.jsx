@@ -74,9 +74,9 @@ function SponsorCard() {
                         <div className="description">
                             {sponsors[slideIndex].description}
                         </div>
-                        <div className="link">
+                        <a className="link" href={`https://${sponsors[slideIndex].link}/`} target="_blank" rel="noopener noreferrer">
                             {sponsors[slideIndex].link}
-                        </div>
+                        </a>
                     </div>
                     <ImageWithButtons
                         array={sponsors}

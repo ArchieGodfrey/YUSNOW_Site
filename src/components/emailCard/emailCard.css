@@ -62,12 +62,19 @@
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 2px;
         border-color: white;
-        color: white;
+        color: rgba(245, 245, 245, 1);
         font-size: 20px;
         font-family: Corbel;
         margin: 10px 0;
+        padding: 5px;
         width: 100%;
     }
+
+    .input::placeholder {
+        color: black;
+        opacity: 0.7;
+        font-size: 20px;
+      }
 
     .title {
         color: white;

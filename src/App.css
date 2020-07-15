@@ -45,6 +45,13 @@ button:hover {
     overflow-y: scroll;;
   }
 
+@media (max-width: 500px) {
+  .App 
+    .Scrollview {
+      scroll-snap-type: none;
+    }
+}
+
   .Scrollview::-webkit-scrollbar {
       display: none  
   }
