@@ -5,22 +5,14 @@ function EmailCard() {
     return (
         <div className="emailRoot" id="contact">
             <div className="container">
-                <div className="header">Contact</div>
+                <div className="header">CONTACT</div>
                 <div className="bar"/>
-                <div className="contents">
-                    <form action="mailto:oliver.driver100@gmail.com" method="post" enctype="text/plain">
-                        <div className="text">Name:</div>
-                        <input className="input" type="text" name="name"/>
-
-                        <div className="text">Email:</div>
-                        <input className="input" type="email" name="email"/>
-
-                        <div className="text">Body:</div>
-                        <input className="input" type="text" name="name"/>
-                        
-                        <button className="buttonMargin">Send</button>
-                    </form>
-                </div>
+                <form action="mailto:oliver.driver100@gmail.com" method="post" enctype="text/plain">
+                    <input className="input" type="text" name="name" placeholder="Name"/>
+                    <input className="input" type="email" name="email" placeholder="Email"/>
+                    <textarea className="input" type="text" name="name" rows="5" cols="30" placeholder="Body"/>
+                    <button className="buttonMargin">Send</button>
+                </form>
             </div>
         </div>
     )
