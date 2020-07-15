@@ -45,6 +45,21 @@
         border-right: 400px solid rgba(0, 0, 0, 0.4);
     }
 
+@media (max-width: 600px) {
+    .MerchRoot
+        .triangleLeft {
+            display: none;
+        }
+    .MerchRoot
+        .triangleRight {
+            display: none;
+        }
+    .MerchRoot
+        .container {
+            width: 100%;
+        }
+}
+
 .MerchRoot
     .heading {
         color: white;
@@ -65,6 +80,13 @@
         display: flex;
         flex: 1;
     }
+
+@media (max-width: 950px) {
+    .MerchRoot
+        .row {
+            flex-direction: column;
+        }
+}
 
 .MerchRoot
     .text {
@@ -122,3 +144,4 @@
         max-height: 30vw;
         max-width: 30vw;
     }
+

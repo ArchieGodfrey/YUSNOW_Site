@@ -9,12 +9,7 @@
 }
 
 .ImageWithButtons
-    .slide {
-        display:flex;
-    }
-
-.ImageWithButtons
-    .row {
+    .center {
         display:flex;
         justify-content: center;
     }

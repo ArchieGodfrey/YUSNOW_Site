@@ -9,10 +9,10 @@ function ImageWithButtons({ array, slide, slideIndex, setSlideIndex }) {
 
     return(
         <div className="ImageWithButtons">
-           <div className="slide" onClick={() => nextSlide(slideIndex, setSlideIndex, array)}>
+           <div className="center" onClick={() => nextSlide(slideIndex, setSlideIndex, array)}>
                {slide}
            </div>
-           <div className="row">
+           <div className="center">
             {array.map((_, index)=>(
                 index===slideIndex?(
                     <div className="filledCircle" />
