@@ -23,11 +23,19 @@ function Navbar({ scrollToRef, scrollPosition}) {
             </div>
             {scrollPosition > 400 && (
               <div className="buttonBar" style={{ opacity: (scrollPosition - 400) * 0.0015 }}>
-                <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
-                <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
-                <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
-                <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
-              </div>
+                  <div class="button" onClick={() => scrollToRef('about')}>
+                        <a class="custom-underline">About</a>
+                  </div>
+                  <div class="button" onClick={() => scrollToRef('merchandise')}>
+                        <a class="custom-underline">Merchandise</a>
+                  </div>
+                  <div class="button" onClick={() => scrollToRef('contact')}>
+                        <a class="custom-underline">Contact</a>
+                  </div>
+                  <div class="button" onClick={() => scrollToRef('sponsorcard')}>
+                        <a class="custom-underline">Sponsors</a>
+                  </div>
+                </div>
             )}
         </div>
     )
