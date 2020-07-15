@@ -18,9 +18,16 @@ function EmailCard() {
                               </form>
                             </div>
                         </div>
-                        <div className="contents">
+                        <div className="contents margin">
                             <div className="title">Our infomation</div>
-                            <div className="text">snow@yusu.org</div>
+                            <a>
+                                <img 
+                                    src={require('../../assets/social-media-logos/mail.png')} 
+                                    className="image"
+                                    alt="Logo"
+                                />
+                                <div className="text">snow@yusu.org</div>
+                            </a>
                             <a href="https://www.facebook.com/YUsnow/" target="_blank" rel="noopener noreferrer">
                                 <img 
                                     src={require('../../assets/social-media-logos/facebook_white_logo.png')} 
