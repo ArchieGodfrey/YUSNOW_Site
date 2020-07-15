@@ -46,7 +46,7 @@
     .triangleRight {
         width: 0; 
         height: 0; 
-        border-top: 660px solid transparent;
+        border-top: 700px solid transparent;
         border-left: 400px solid rgba(0, 0, 0, 0.4);
     }
 
@@ -54,7 +54,7 @@
     .triangleLeft {
         width: 0; 
         height: 0; 
-        border-top: 660px solid transparent;
+        border-top: 700px solid transparent;
         border-right: 400px solid rgba(0, 0, 0, 0.4);
     }
 
@@ -166,5 +166,7 @@
         height: auto;
         max-height: 25vw;
         max-width: 25vw;
+        border: 1px solid white;
+        border-radius: 5px;
     }
 
