@@ -9,6 +9,7 @@ function Navbar({scrollToRef}) {
                     src={require('../../assets/YUSNOW_LOGO.png')} 
                     className="image"
                     alt="Logo"
+                    onClick={() => scrollToRef('top')}
                 />
                 <div className="block"/>
                 <div className="col">
