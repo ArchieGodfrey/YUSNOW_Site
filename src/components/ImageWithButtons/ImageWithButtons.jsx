@@ -1,7 +1,7 @@
 import React from 'react';
 import "./ImageWithButtons.css";
 
-function ImageWithButtons({ array, slide, slideIndex, setSlideIndex }) {
+function ImageWithButtons({ array, slide, slideIndex, setSlideIndex, className }) {
 
     const nextSlide = (slideIndex, setSlideIndex, array) => (
         slideIndex < array.length - 1 ? setSlideIndex(slideIndex+1) : setSlideIndex(0)
@@ -17,7 +17,7 @@ function ImageWithButtons({ array, slide, slideIndex, setSlideIndex }) {
     }, [slideIndex, setSlideIndex, array])
 
     return(
-        <div className="ImageWithButtons">
+        <div className={`ImageWithButtons ${className}`}>
            <div className="center" onClick={() => nextSlide(slideIndex, setSlideIndex, array)} style={{cursor:"pointer"}}>
                {slide}
            </div>

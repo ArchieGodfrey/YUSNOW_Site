@@ -32,6 +32,7 @@
 
 .sponsorCard
     .textContainer {
+        flex: 1;
         align-self: start;
         display: grid;
         grid-template-columns: 1fr;
@@ -44,6 +45,11 @@
             grid-template-rows: 1fr 1fr;
         }
 }
+
+.sponsorCard
+    .imageContainer {
+        flex: 1;
+    }
 
 .sponsorCard
     .header {

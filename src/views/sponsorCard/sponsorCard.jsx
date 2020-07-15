@@ -79,6 +79,7 @@ function SponsorCard() {
                         </a>
                     </div>
                     <ImageWithButtons
+                        className="imageContainer"
                         array={sponsors}
                         slideIndex={slideIndex}
                         setSlideIndex={setSlideIndex}
