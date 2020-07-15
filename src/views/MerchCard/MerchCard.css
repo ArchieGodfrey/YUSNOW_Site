@@ -155,15 +155,15 @@
     .imageWindow {
         height: 400px;
         width: 400px;
-        max-height: 30vw;
-        max-width: 30vw;
+        max-height: 25vw;
+        max-width: 25vw;
     }
 
 .MerchRoot
     .image {
         width: 100%;
         height: auto;
-        max-height: 30vw;
-        max-width: 30vw;
+        max-height: 25vw;
+        max-width: 25vw;
     }
 
