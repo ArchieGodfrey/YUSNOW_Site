@@ -1,0 +1,31 @@
+.sponsorBar {
+    font-family: DaddyDay;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+}
+
+.sponsorBar
+    .background {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+.sponsorBar 
+    .image {
+        height:50px;
+        width:auto;
+        z-index: 10;
+        opacity: 1;
+        margin: 20px;
+    }
+
+.sponsorBar 
+    .p {
+        /*margin: 5%; */
+        font-weight: bold;
+        color: white;
+    }

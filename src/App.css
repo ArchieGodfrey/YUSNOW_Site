@@ -1,28 +1,85 @@
 .App {
-  text-align: center;
+  height: 100vh;
   background-color: black;
   font-family: DaddyDay;
-  background-image: url("./background-images/Background-Image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   animation: background 30s infinite;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* This will change the styles of all buttons */
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  height: calc(40px + 1vw);
+  min-width: 125px;
+  border-radius: 20px;  
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+  transition: background-color 1s ease;
+  font-family: DaddyDay;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);;
+  opacity: 0.9;
+
+}
+
+.App 
+  .Scrollview {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;;
+  }
+
+@media (max-width: 500px) {
+  .App 
+    .Scrollview {
+      scroll-snap-type: none;
+    }
+}
+
+  .Scrollview::-webkit-scrollbar {
+      display: none  
+  }
+
+
+  .block {
+    height: 200px;
+    width: 100%;
+  }
+
+@keyframes background {
+  0% {
+    background-image: url("./background-images/Background-Image-6.jpg");
+  }
+  20% {
+    background-image: url("./background-images/Background-Image-4.jpg");
+  }
+  40% {
+    background-image: url("./background-images/Background-Image-3.jpg");
+  }
+  60% {
+    background-image: url("./background-images/Background-Image-2.jpg");
+  }
+  80% {
+    background-image: url("./background-images/Background-Image-5.jpg");
+  }
+  100% {
+    background-image: url("./background-images/Background-Image-6.jpg");
   }
 }
 
@@ -31,64 +88,13 @@
   src: url("./assets/DaddyDay.woff");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: Corbel;
+  src: url("./assets/CORBEL.TTF");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
 }
 
-
-@keyframes background {
-  0% {
-    background-image: url("./background-images/Background-Image-1.jpg");
-  }
-  20% {
-    background-image: url("./background-images/Background-Image-2.jpg");
-  }
-  40% {
-    background-image: url("./background-images/Background-Image-3.jpg");
-  }
-  60% {
-    background-image: url("./background-images/Background-Image-4.jpg");
-  }
-  80% {
-    background-image: url("./background-images/Background-Image-5.jpg");
-  }
-  100% {
-    background-image: url("./background-images/Background-Image-1.jpg");
-  }
-}
-
-/* This will change the styles of all buttons */
-button {
-  background-color: black;
-  color: #fff;
-  height: calc(40px + 1vw);
-  width: calc(100px + 4vw);
-  border-radius: 5px;
-  border: none;
-  box-shadow: 1px 1px 5px rgb(31, 0, 0);
-  font-size: 1rem;
-  transition: background-color 1s ease;
-  opacity: 0.5;
-  transition: opacity 0.5s;
-}
-
-button:focus {
-  border-color: black;
-  outline: none;
-}
-
-button:hover {
-  border: 1px solid black;
-  background-color: black;
-  opacity: 0.9;
-}
 

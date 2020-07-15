@@ -1,0 +1,180 @@
+.MerchRoot {
+    display: flex;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    padding: 25vw 0 15vw 0;
+}
+
+.justifyContent {
+    justify-content: flex-end;
+}
+
+.alignItems {
+    align-items: flex-end;
+}
+
+.MerchRoot
+    .rowReverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+.MerchRoot
+    .outerRow {
+        display: flex;
+        flex: 1;
+    }
+
+@media (max-width: 600px) {
+    .MerchRoot
+        .outerRow {
+            flex-direction: column;
+        }
+}
+
+.MerchRoot
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: black;
+        padding: 10px;
+    }
+
+
+.MerchRoot
+    .heading {
+        color: white;
+        margin-bottom: 10px;
+        font-family: DaddyDay;
+        font-size: 60px;
+    }
+
+.MerchRoot
+    .bar {
+        border-bottom: 2px solid white;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+.MerchRoot
+    .row {
+        display: flex;
+        flex: 1;
+    }
+
+@media (max-width: 950px) {
+    .MerchRoot
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+.MerchRoot
+    .text {
+        display: flex;
+        margin: 5vw 2vw 0 2vw;
+        flex: 1;
+        color: white;
+        font-family: Corbel;
+        font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+@media (max-width: 950px) {
+    .MerchRoot
+        .text {
+            margin: 10px;
+        }
+}
+
+.MerchRoot
+    .name {
+        font-size: 40px;
+        font-family: DaddyDay;
+        color: white;
+    }
+   
+.MerchRoot
+    .description {
+        font-size: 30px;
+        font-family: DaddyDay;
+        margin: 15px 0;
+        color: white;
+    }
+
+.MerchRoot
+    .rotateContainerLeft {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        order: -1;
+    }
+
+@media (max-width: 950px) {
+    .MerchRoot
+        .rotateContainerLeft {
+            order: 1;
+        }
+}
+
+.MerchRoot
+    .rotateContainerRight {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+.MerchRoot
+    .imageWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.MerchRoot
+    .imageWindow {
+        height: 400px;
+        width: 400px;
+        max-height: 20vw;
+        max-width: 20vw;
+        margin-bottom: 35px;
+    }
+
+.MerchRoot
+    .image {
+        width: 100%;
+        height: auto;
+        max-height: 20vw;
+        max-width: 20vw;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+@media (max-width: 950px) {
+    .MerchRoot
+        .image {
+            max-height: 50vw;
+            max-width: 50vw;
+        }
+    .MerchRoot
+        .imageWindow {
+            max-height: 30vw;
+            max-width: 30vw;
+            margin-bottom: 20px;
+        }
+}
+
+@media (max-width: 600px) {
+    .MerchRoot
+        .image {
+            max-height: 250px;
+            max-width: 250px;
+        }
+    .MerchRoot
+        .imageWindow {
+            max-height: 250px;
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+}

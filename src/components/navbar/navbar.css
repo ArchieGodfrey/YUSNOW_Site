@@ -1,45 +1,130 @@
 
 .navbar {
     position:absolute;
-    height:100px;
+    height:150px;
     width:100%;
     top:0;
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    transition: opacity 0.5s;
     font-family: DaddyDay;
-}
-
-.navbar:hover {
-    opacity: 0.9;
-}
-
-.image {
-    height:100px;
-    width:auto;
     z-index: 10;
-    opacity: 1;
 }
 
-.title {
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
+@media (max-width: 500px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.navbar
+    .block {
+        width:50px;
+        height:auto;
+    }
+
+.navbar
+    .image {
+        height:100px;
+        width:auto;
+        z-index: 10;
+        opacity: 1;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+.navbar
+    .title {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: DaddyDay;
+        letter-spacing: 5px;
+    }
+
+.navbar
+    .slogon {
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+.navbar
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+.navbar
+    .buttonBar {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 50px;
+        margin-right: 50px;
+    }
+ 
+@media (max-width: 900px) {
+    .navbar
+        .buttonBar {
+            grid-gap: 20px;
+        }
+}
+@media (max-width: 750px) {
+    .navbar
+        .buttonBar {
+          display: none;
+        }
+}
+
+  /*------------------------------------*/
+  /*----- Custom Underline Styles ------*/
+  /*------------------------------------*/
+
+  .button {
+    display: block;
+    width: 100%;
+    color: #fff;
     font-family: DaddyDay;
-    letter-spacing: 5px;
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    cursor: pointer;
+    height:100px;
+    line-height:100px;
+  }
+  
+  .custom-underline {
+    position: relative;
+    display: inline-block;
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .custom-underline,
+  .custom-underline:hover,
+  .custom-underline:focus,
+  .custom-underline:active {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .custom-underline::after {
+    content: "";
+    position: absolute;
+  }
+
+.button .custom-underline::after {
+    top: 65%;
+    height: 2px;
+    width: 0%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s ease all .3s;
 }
 
-.slogon {
-    color: white;
-    font-weight: 100;
-    font-size: 20px;
-    
+.button:hover .custom-underline::after {
+    width: 90%;
+    transition: 0.3s ease all;
 }
-
-.col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-

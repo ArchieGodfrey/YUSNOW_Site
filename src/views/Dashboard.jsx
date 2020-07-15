@@ -4,10 +4,21 @@ import React from 'react';
 import './Dashboard.css';
 
 // So this a function with name 'Dashboard' and it returns a div and an Input
-function Dashboard({ changeScreen }) {
-  const [showImage, setShowImage] = React.useState(0); 
+function Dashboard({ scrollToRef }) {
   return (
-  <div/>
+    <div className="dashboard" id="dashboard">
+      <div className="imageContainer"/>
+      <div className="buttonBar">
+        <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
+        <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
+        <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
+        <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
+      </div>
+      <div className="welcomeMessage">
+        {"Welcome to the University of York Ski and Snowboard Society"}
+      </div>
+    </div>
+    
   );
 }
 

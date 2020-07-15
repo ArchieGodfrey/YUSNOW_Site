@@ -1,0 +1,110 @@
+.sponsorCard {
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    padding: 25vw 0 15vw 0;
+}
+
+.sponsorCard 
+    .container {
+        display: flex;
+        flex-direction: column;
+        font-family: DaddyDay;
+        background-color: rgba(0, 0, 0, 0.8);
+        width:100%;
+        padding: 20px;
+        scroll-behavior: smooth;
+    }
+
+.sponsorCard
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+@media (max-width: 950px) {
+    .sponsorCard
+        .row {
+            flex-direction: column;
+        }
+}
+
+.sponsorCard
+    .textContainer {
+        flex: 1;
+        align-self: start;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 1fr;
+    }
+
+@media (max-width: 950px) {
+    .sponsorCard
+        .textContainer {
+            grid-template-rows: 1fr 1fr;
+        }
+}
+
+.sponsorCard
+    .imageContainer {
+        flex: 1;
+    }
+
+.sponsorCard
+    .header {
+        margin-bottom: 10px;
+    }
+
+.sponsorCard
+    .imageWindow {
+        height: 400px;
+        width: 400px;
+        max-height: 40vw;
+        max-width: 40vw;
+    }
+
+.sponsorCard
+    .image {
+        width: 100%;
+        height: auto;
+        max-height: 40vw;
+        max-width: 40vw;
+    }
+
+.sponsorCard
+    .text {
+        color: white;
+        margin: 20px 0;
+    }
+
+.sponsorCard  
+    .title {
+        color: white;
+        margin: 20px;
+        font-size: 80px;
+        font-family: DaddyDay;
+    }
+
+.sponsorCard  
+    .description {
+        color: white;
+        margin: 20px;
+        font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+        font-family: Corbel;
+    }
+
+.sponsorCard  
+    .link {
+        color: white;
+        margin: 20px;
+        font-size: 30px;
+        font-family: Corbel;
+    }
+
+.sponsorCard
+    .bar {
+        border-bottom: 2px solid white;
+        width: 50%;
+        margin-bottom: 20px;
+    }

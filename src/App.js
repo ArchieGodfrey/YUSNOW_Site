@@ -1,17 +1,88 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Dashboard from './views/Dashboard';
 import Navbar from './components/navbar/navbar';
+import SponsorBar from './components/sponsorBar/sponsorBar';
+import MerchCard from './views/MerchCard/MerchCard';
+import SponsorCard from './views/sponsorCard/sponsorCard';
+import ToTop from './components/toTop/toTop';
+import EmailCard from './views/emailCard/emailCard';
+
 
 function App() {
-  const [showDashboard, setShowDashboard] = React.useState(false); 
+  const scrollToRef = (id) => {
+    document.getElementById('ScrollView').scrollTo({ top: document.getElementById(id).offsetTop - 150, behavior: 'smooth'});
+  }
+  const committee = [{
+    name:"Alex Sanderson",
+    description:"President",
+    image: require('./assets/committee-photos/Alex.jpg'),
+  }, {
+    name:"Vicki Blake",
+    description:"Vice President",
+    image: require('./assets/committee-photos/Vicki.png'),
+  }, {
+    name:"Rachel Gibson",
+    description:"Treasurer",
+    image: require('./assets/committee-photos/Rachel.jpg'),
+  }, {
+    name:"Hugh campkin",
+    description:"Trip Secretary",
+    image: require('./assets/committee-photos/Hugh.png'),
+  }, {
+    name:"Oliver Driver",
+    description:"Media and Merch Officer",
+    image: require('./assets/committee-photos/Olly.jpg'),
+  }, {
+    name:"Charlie Stent",
+    description:"Social Secretary",
+    image: require('./assets/committee-photos/Charlie.png'),
+  }, {
+    name:"Aarin Popat",
+    description:"Social Secretary",
+    image: require('./assets/committee-photos/Azza.png'),
+  }, {
+    name:"Elizabeth Baker",
+    description:"Race Captain",
+    image: require('./assets/committee-photos/Elizabeth.jpg'),
+  }, {
+    name:"Jack Littlewood",
+    description:"Freestyle Captain",
+    image: require('./assets/committee-photos/Jack.jpg'),
+  }]
+  const merch = [{
+    name:"Black Tee",
+    description:"",
+    image: require('./assets/merchandise/Black-Tee-Temp.jpg'),
+}, {
+    name:"Grey Tee",
+    description:"",
+    image: require('./assets/merchandise/Grey-tee-temp.jpg'),
+}, {
+    name:"Pink Tee",
+    description:"",
+    image: require('./assets/merchandise/Pink_Tee.jpg'),
+}];
+
+const [scrollPosition, setScrollPosition] = React.useState(0);
+const onScroll = (event) => {
+  setScrollPosition(event.nativeEvent.srcElement.scrollTop)
+}
+
   return (
     <div className="App">
-      <Navbar/>
-      
+      <Navbar scrollToRef={scrollToRef} scrollPosition={scrollPosition} />
+      <div id="ScrollView" className="Scrollview" onScroll={onScroll}>
+        <div className="block" id="top"/>
+        <Dashboard scrollToRef={scrollToRef} />
+        <MerchCard id="about" title="ABOUT" text="Welcome to the University of York Ski and Snowboard society. We are an inclusive club that offers some of the best socials on campus, ski races and most importantly... bi-annual ski trips for our members!" right info={committee}/>
+        <MerchCard id="merchandise" title="MERCHANDISE" text="The following merchandise can be bought through the club, by either sending us an email or messaging our social media pages." info={merch}/>
+        <EmailCard id="contact"/>
+        <SponsorCard id="sponsorcard"/>
+        <ToTop scrollToRef={scrollToRef} />
+        <SponsorBar/>
+      </div>
     </div>
-    
   );
 }
 
