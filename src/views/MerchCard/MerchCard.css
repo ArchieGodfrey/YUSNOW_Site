@@ -74,7 +74,7 @@
 .MerchRoot
     .text {
         display: flex;
-        margin-top: 5vw;
+        margin: 5vw 2vw 0 2vw;
         flex: 1;
         color: white;
         font-family: Corbel;
