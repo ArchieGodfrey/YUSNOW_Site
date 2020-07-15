@@ -25,9 +25,9 @@ function SponsorCard() {
         link:"www.friskiwear.com/"
     }, {
         name:"Joss",
-        description:"Hello",
+        description:"The energy drink power to keep your night flowing. Order on the Extra Joss webshop!",
         image: require('../../assets/sponsor-logos/Joss.png'),
-        link:""
+        link:"www.extrajoss.eu"
     }, {
         name:"Panda Optics",
         description:"Panda optics combine the latest technology and most innovative designs in order to optimise skiers/boarders vision and comfort, whether it be competing as one of our British athletes, wading through waist deep powder, strolling round town or hitting the Apres ski.",
