@@ -3,7 +3,7 @@
     justify-content: center;
     scroll-snap-align: center;
     scroll-behavior: smooth;
-    margin-bottom: 150px;
+    padding: 350px 0 250px 0;
 }
 
 .emailRoot 
@@ -15,7 +15,6 @@
         font-family: DaddyDay;
         background-color: rgba(0, 0, 0, 0.4);
         width:100%;
-        height:600px;
         padding: 20px;
         scroll-behavior: smooth;
     }
@@ -33,13 +32,23 @@
         margin-bottom: 20px;
     }
 
+    .row {
+        display: flex;
+    }
+
+    @media (max-width: 800px) {
+        .emailRoot .row {
+            flex-direction: column;
+        }
+    }
+
     .contents {
         display: flex;
         flex-direction: column; 
         justify-content: flex-start;
         height: 100%;
         flex: 1;
-        margin-right: 20px;
+        margin: 0 20px;
     }
 
     .text {
@@ -56,7 +65,8 @@
         color: black;
         font-size: 20px;
         font-family: Corbel;
-        margin-top: 20px;
+        margin: 10px 0;
+        width: 100%;
     }
 
     .title {
@@ -69,8 +79,8 @@
     .image {
         height:50px;
         width:auto;
-        margin-top: 20px;
-        margin-right: 20px;
+        margin: 20px;
+        margin-left: 0px;
     }
 
     a {
@@ -79,5 +89,5 @@
         color: white;
         font-family: Corbel;
         font-size: 25px;
-        justify-content: center;
+        align-items: center;
     }
