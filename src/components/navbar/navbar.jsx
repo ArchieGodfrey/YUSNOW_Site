@@ -3,7 +3,7 @@ import "./navbar.css";
 
 function Navbar({ scrollToRef, scrollPosition}) {
     return(
-        <div className="navbar" style={scrollPosition > 400 ? { backgroundColor: `rgba(30,30,30,${(scrollPosition - 400) * 0.0015})`} : {}}>
+        <div className="navbar" style={scrollPosition > 300 ? { backgroundColor: `rgba(30,30,30,${(scrollPosition - 300) * 0.002})`} : {}}>
             <div style={{display:"flex"}}>
                 <img 
                     src={require('../../assets/YUSNOW_LOGO.png')} 
@@ -21,13 +21,21 @@ function Navbar({ scrollToRef, scrollPosition}) {
                     </div>
                 </div>
             </div>
-            {scrollPosition > 400 && (
-              <div className="buttonBar" style={{ opacity: (scrollPosition - 400) * 0.0015 }}>
-                <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
-                <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
-                <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
-                <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
-              </div>
+            {scrollPosition > 300 && (
+              <div className="buttonBar" style={{ opacity: (scrollPosition - 300) * 0.002 }}>
+                  <div class="button" onClick={() => scrollToRef('about')}>
+                        <a class="custom-underline">About</a>
+                  </div>
+                  <div class="button" onClick={() => scrollToRef('merchandise')}>
+                        <a class="custom-underline">Merchandise</a>
+                  </div>
+                  <div class="button" onClick={() => scrollToRef('contact')}>
+                        <a class="custom-underline">Contact</a>
+                  </div>
+                  <div class="button" onClick={() => scrollToRef('sponsorcard')}>
+                        <a class="custom-underline">Sponsors</a>
+                  </div>
+                </div>
             )}
         </div>
     )
