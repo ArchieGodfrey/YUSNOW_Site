@@ -48,17 +48,16 @@
         width: 0; 
         height: 0;
         padding: 10px;
-        border-top: 65vh solid transparent;
-        border-left: 25vw solid rgba(0, 0, 0, 0.4);
+        border-top: calc(65vh + 20px) solid transparent;
+        border-left: calc(25vw + 20px) solid rgba(0, 0, 0, 0.4);
     }
 
 .MerchRoot
     .triangleLeft {
         width: 0; 
         height: 0;
-        padding: 10px;
-        border-top: 65vh solid transparent;
-        border-right: 25vw solid rgba(0, 0, 0, 0.4);
+        border-top: calc(65vh + 20px) solid transparent;
+        border-right: calc(25vw + 20px) solid rgba(0, 0, 0, 0.4);
     }
 
 @media (max-width: 600px) {
