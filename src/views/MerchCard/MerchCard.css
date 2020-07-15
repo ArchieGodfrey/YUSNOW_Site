@@ -2,7 +2,7 @@
     display: flex;
     scroll-snap-align: center;
     scroll-behavior: smooth;
-    margin-bottom: 300px; 
+    padding: 350px 0 250px 0;
 }
 
 .justifyContent {
