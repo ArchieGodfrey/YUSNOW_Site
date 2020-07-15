@@ -47,6 +47,14 @@
       font-size: 30px;
   }
 
+@media (max-width: 600px) {
+  .dashboard
+      .welcomeMessage {
+        text-align: center;
+        margin: 0 10px;
+      }
+}
+
 @keyframes image-spin {
     from {
       transform: rotate(0deg);
