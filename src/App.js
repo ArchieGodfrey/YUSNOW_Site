@@ -65,7 +65,7 @@ function App() {
 }]
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar scrollToRef={scrollToRef}/>
       <div id="ScrollView" className="Scrollview">
         <div className="block" id="top"/>
         <Dashboard scrollToRef={scrollToRef} />

@@ -10,13 +10,13 @@ function EmailCard() {
                 <div className="contents">
                     <form action="mailto:oliver.driver100@gmail.com" method="post" enctype="text/plain">
                         <div className="text">Name:</div>
-                        <input type="text" name="name"/>
+                        <input className="input" type="text" name="name"/>
 
                         <div className="text">Email:</div>
-                        <input type="email" name="email"/>
+                        <input className="input" type="email" name="email"/>
 
                         <div className="text">Body:</div>
-                        <input className="body" type="text" name="name"/>
+                        <input className="input" type="text" name="name"/>
                         
                         <button className="buttonMargin">Send</button>
                     </form>

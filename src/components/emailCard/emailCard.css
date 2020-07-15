@@ -42,12 +42,10 @@
         color: white;
         margin-top: 10px;
         font-family: Corbel;
-        font-size: 30px;
+        font-size: 25px;
     }
 
-    .body {
-        height:100px;
-        width: 300px;
+    .input {
         background-color: rgba(0, 0, 0, 0.4);
         border-color: transparent;
     }

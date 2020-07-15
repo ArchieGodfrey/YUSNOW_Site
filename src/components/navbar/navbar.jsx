@@ -1,24 +1,30 @@
 import React from 'react';
 import "./navbar.css";
 
-function Navbar() {
+function Navbar({scrollToRef}) {
     return(
         <div className="navbar">
-            <div className="block"/>
-
-            <img 
-                src={require('../../assets/YUSNOW_LOGO.png')} 
-                className="image"
-                alt="Logo"
-            />
-            <div className="block"/>
-            <div className="col">
-                <div className="title">
-                    {"yusnow".toUpperCase()}
+            <div style={{display:"flex"}}>
+                <img 
+                    src={require('../../assets/YUSNOW_LOGO.png')} 
+                    className="image"
+                    alt="Logo"
+                />
+                <div className="block"/>
+                <div className="col">
+                    <div className="title">
+                        {"yusnow".toUpperCase()}
+                    </div>
+                    <div className="slogon">
+                        {"York University Ski and Snowboard Society"}
+                    </div>
                 </div>
-                <div className="slogon">
-                    {"York University Ski and Snowboard Society"}
-                </div>
+            </div>
+            <div className="buttonBar">
+                <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
+                <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
+                <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
+                <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
             </div>
         </div>
     )
