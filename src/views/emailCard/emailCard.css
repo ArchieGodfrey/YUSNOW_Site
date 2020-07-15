@@ -81,6 +81,7 @@
         margin: 10px 0;
         padding: 5px;
         width: 100%;
+        resize: vertical;
     }
 .emailRoot
     .input::placeholder {
