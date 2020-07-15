@@ -1,8 +1,9 @@
 .sponsorCard {
     display: flex;
     justify-content: center;
-    scroll-snap-align: start;
-    margin-bottom: 150px;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    margin-bottom: 75px;
 }
 
 .sponsorCard 

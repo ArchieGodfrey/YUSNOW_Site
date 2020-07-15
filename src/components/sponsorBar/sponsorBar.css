@@ -1,5 +1,7 @@
 .sponsorBar {
     font-family: DaddyDay;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
 }
 
 .sponsorBar

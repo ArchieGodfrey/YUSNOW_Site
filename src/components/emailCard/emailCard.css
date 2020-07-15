@@ -1,7 +1,8 @@
 .emailRoot {
     display: flex;
     justify-content: center;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
     margin-bottom: 150px;
 }
 

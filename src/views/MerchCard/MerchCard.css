@@ -1,6 +1,7 @@
 .MerchRoot {
     display: flex;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
     margin-bottom: 300px; 
 }
 
