@@ -72,6 +72,7 @@
         background-color: white;
         color: red;
         margin-right: 20px;
+        margin-left: 20px;
     }
 
 .MerchRoot
@@ -99,10 +100,17 @@
     }
 
 .MerchRoot
-    .rotateContainer {
+    .rotateContainerLeft {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start; 
+    }
+
+.MerchRoot
+    .rotateContainerRight {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
     }
 
     .aboutContainer {

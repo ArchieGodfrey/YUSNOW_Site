@@ -11,6 +11,7 @@ function Dashboard({ scrollToRef }) {
       <div className="buttonBar">
         <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
         <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
+        <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
         <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
       </div>
       <div className="welcomeMessage">
