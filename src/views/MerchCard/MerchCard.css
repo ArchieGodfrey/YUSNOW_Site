@@ -133,8 +133,10 @@
 
 .MerchRoot
     .imageWindow {
-        height: 30vw;
-        width: 30vw;
+        height: 400px;
+        width: 400px;
+        max-height: 30vw;
+        max-width: 30vw;
     }
 
 .MerchRoot
