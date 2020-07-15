@@ -62,11 +62,17 @@ function App() {
     name:"Tee 2",
     description:"",
     image: require('./assets/merchandise/Pink_Tee.jpg'),
-}]
+}];
+
+const [scrollPosition, setScrollPosition] = React.useState(0);
+const onScroll = (event) => {
+  setScrollPosition(event.nativeEvent.srcElement.scrollTop)
+}
+
   return (
     <div className="App">
-      <Navbar scrollToRef={scrollToRef}/>
-      <div id="ScrollView" className="Scrollview">
+      <Navbar scrollToRef={scrollToRef} showButtons={scrollPosition > 600} />
+      <div id="ScrollView" className="Scrollview" onScroll={onScroll}>
         <div className="block" id="top"/>
         <Dashboard scrollToRef={scrollToRef} />
         <MerchCard id="about" title="ABOUT" text="Welcome to the University of York Ski and Snowboard society. We are an inclusive club that offers some of the best socials on campus, ski races and most importantly... bi-annual ski trips for our members!" right info={committee}/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./navbar.css";
 
-function Navbar({scrollToRef}) {
+function Navbar({ scrollToRef, showButtons}) {
     return(
         <div className="navbar">
             <div style={{display:"flex"}}>
@@ -21,12 +21,14 @@ function Navbar({scrollToRef}) {
                     </div>
                 </div>
             </div>
-            <div className="buttonBar">
+            {showButtons && (
+              <div className="buttonBar">
                 <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('sponsorcard')}>Sponsors</button>
-            </div>
+              </div>
+            )}
         </div>
     )
 }
