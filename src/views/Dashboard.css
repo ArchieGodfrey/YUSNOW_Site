@@ -1,12 +1,12 @@
 .dashboard {
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    font-family: DaddyDay;
-    flex-direction: column;
-    margin-bottom: 35vh;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: DaddyDay;
+  flex-direction: column;
+  margin-bottom: 35vh;
 }
 
 .dashboard

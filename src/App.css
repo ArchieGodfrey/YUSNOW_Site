@@ -38,7 +38,7 @@ button:hover {
 
 .App 
   .Scrollview {
-
+    scroll-snap-type: y mandatory;
     overflow: auto;
     position: relative;
     height: 100%;
