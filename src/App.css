@@ -19,6 +19,7 @@ button {
   border: 3px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   height: calc(40px + 1vw);
+  min-width: 100px;
   border-radius: 20px;  
   font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
   transition: background-color 1s ease;
@@ -34,7 +35,6 @@ button:hover {
   opacity: 0.9;
 
 }
-
 
 .App 
   .Scrollview {

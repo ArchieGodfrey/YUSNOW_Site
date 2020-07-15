@@ -64,32 +64,36 @@ function SponsorCard() {
 
     return(
         <div className="sponsorCard" id="sponsorcard">
-           <div className="container">
-               <div className="textContainer">
-                    <div className="title">
-                        {sponsors[slideIndex].name}
+            <div className="container">
+                <div className="title">
+                    {sponsors[slideIndex].name}
+                </div>
+                <div className="bar"/>
+                <div className="row">
+                    <div className="textContainer">
+                        <div className="description">
+                            {sponsors[slideIndex].description}
+                        </div>
+                        <div className="link">
+                            {sponsors[slideIndex].link}
+                        </div>
                     </div>
-                    <div className="bar"/>
-                    <div className="description">
-                        {sponsors[slideIndex].description}
-                    </div>
-                    <div className="link">
-                        {sponsors[slideIndex].link}
-                    </div>
-               </div>
-               <ImageWithButtons
-                    array={sponsors}
-                    slideIndex={slideIndex}
-                    setSlideIndex={setSlideIndex}
-                    slide={
-                        <img
-                            src={sponsors[slideIndex].image}
-                            className="image"
-                            alt="Logo"
-                        />
-                    }
-                />
-           </div>
+                    <ImageWithButtons
+                        array={sponsors}
+                        slideIndex={slideIndex}
+                        setSlideIndex={setSlideIndex}
+                        slide={
+                        <div className="imageWindow">
+                            <img
+                                src={sponsors[slideIndex].image}
+                                className="image"
+                                alt="Logo"
+                            />
+                        </div>
+                        }
+                    />
+                </div>
+            </div>
         </div>
     )
 }

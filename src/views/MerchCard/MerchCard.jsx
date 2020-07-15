@@ -7,7 +7,7 @@ const [slideIndex, setSlideIndex]=React.useState(0);
 //const [slideIndexAbout, setSlideIndexAbout]=React.useState(0);
   return (
     <div className={right ? "MerchRoot justifyContent" : "MerchRoot"} id={id}>
-      <div className={right ? "rowReverse" : "row"}>
+      <div className={right ? "rowReverse" : "outerRow"}>
         <div className={right ? "container alignItems" : "container"}>
           <div className="heading">{title}</div>
           <div className="bar" />
