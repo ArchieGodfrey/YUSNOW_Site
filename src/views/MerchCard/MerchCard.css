@@ -2,7 +2,7 @@
     display: flex;
     scroll-snap-align: center;
     scroll-behavior: smooth;
-    padding: 35vw 0 25vw 0;
+    padding: 25vw 0 15vw 0;
 }
 
 .justifyContent {
