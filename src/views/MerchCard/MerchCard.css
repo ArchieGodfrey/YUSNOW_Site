@@ -46,7 +46,7 @@
     }
 
 .MerchRoot
-    .header {
+    .heading {
         color: white;
         margin-bottom: 10px;
         font-family: Corbel;
@@ -63,21 +63,16 @@
 .MerchRoot
     .row {
         display: flex;
-    }
-
-.MerchRoot
-    .image {
-        height: 300px;
-        width: auto;
-        background-color: white;
-        color: red;
+        flex: 1;
     }
 
 .MerchRoot
     .text {
+        display: flex;
+        flex: 1;
         color: white;
         font-family: Corbel;
-        font-size: 20px;
+        font-size: 25px;
     }
 
 .MerchRoot
@@ -98,22 +93,32 @@
     .rotateContainerLeft {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; 
+        order: -1;
     }
 
 .MerchRoot
     .rotateContainerRight {
         display: flex;
         flex-direction: column;
-        align-items: flex-end; 
     }
 
-    .aboutContainer {
+.MerchRoot
+    .imageWrapper {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .merchContainer {
-        display: flex;
-        justify-content: flex-start;
+
+.MerchRoot
+    .imageWindow {
+        height: 30vw;
+        width: 30vw;
+    }
+
+.MerchRoot
+    .image {
+        width: 100%;
+        height: auto;
+        max-height: 30vw;
+        max-width: 30vw;
     }
