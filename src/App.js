@@ -31,7 +31,7 @@ function App() {
     image: require('./assets/committee-photos/Hugh.jpg'),
   }, {
     name:"Oliver Driver",
-    description:"Media and Merch Officer (and co-creator of this awesome website)",
+    description:"Media and Merch Officer",
     image: require('./assets/committee-photos/Olly.jpg'),
   }, {
     name:"Charlie Stent",
@@ -61,7 +61,7 @@ function App() {
 }, {
     name:"Tee 2",
     description:"",
-    image: require('./assets/sponsor-logos/fieldtrip_logo.png'),
+    image: require('./assets/merchandise/Pink_Tee.jpg'),
 }]
   return (
     <div className="App">
