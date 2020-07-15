@@ -9,35 +9,43 @@
     margin-bottom: 35vh;
 }
 
-.buttonBar {
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px 0;
+.dashboard
+  .buttonBar {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 50px;
+      margin: 50px 0;
+  }
+
+@media (max-width: 600px) {
+  .dashboard
+      .buttonBar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
 }
 
-.buttonMargin {
-    margin: 0 50px;
-}
+.dashboard
+  .mainImage {
+      max-height: 30vh;
+      width: auto;
+      background-size: cover;
+  }
 
-.mainImage {
-    max-height: 30vh;
-    width: auto;
-    background-size: cover;
-}
+.dashboard
+  .imageContainer {
+      height: 30vh;
+      width: 30vh;
+      background-image: url("../assets/YUSNOW_LOGO.png");
+      background-size: cover;
+      overflow: visible;
+  }
 
-.imageContainer {
-    height: 30vh;
-    width: 30vh;
-    background-image: url("../assets/YUSNOW_LOGO.png");
-    background-size: cover;
-    overflow: visible;
-}
-
-.welcomeMessage {
-    font-family: DaddyDay;
-    font-size: 30px;
-}
+.dashboard
+  .welcomeMessage {
+      font-family: DaddyDay;
+      font-size: 30px;
+  }
 
 @keyframes image-spin {
     from {

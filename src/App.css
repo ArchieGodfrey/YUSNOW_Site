@@ -14,13 +14,13 @@
 
 /* This will change the styles of all buttons */
 button {
+  cursor: pointer;
   background-color: transparent;
   border: 3px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   height: calc(40px + 1vw);
-  width: calc(100px + 4vw);
   border-radius: 20px;  
-  font-size: 30px;
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
   transition: background-color 1s ease;
   font-family: DaddyDay;
 }
