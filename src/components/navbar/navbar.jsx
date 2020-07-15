@@ -3,7 +3,7 @@ import "./navbar.css";
 
 function Navbar({ scrollToRef, scrollPosition}) {
     return(
-        <div className="navbar" style={scrollPosition > 500 ? { backgroundColor: `rgba(255,0,0,${(scrollPosition - 500) * 0.005})`} : {}}>
+        <div className="navbar" style={scrollPosition > 500 ? { backgroundColor: `rgba(30,30,30,${(scrollPosition - 500) * 0.005})`} : {}}>
             <div style={{display:"flex"}}>
                 <img 
                     src={require('../../assets/YUSNOW_LOGO.png')} 

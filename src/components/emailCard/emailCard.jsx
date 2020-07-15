@@ -19,7 +19,7 @@ function EmailCard() {
                                     </div>
                                     
                                     <div>
-                                    <textarea className="input" type="text" name="name" rows="10" cols="100" placeholder="Body"/>
+                                    <textarea className="input" type="text" name="name" rows="10" cols="100" placeholder="Get into contact with us here..."/>
                                     </div>
                                     
                                     <button className="buttonMargin">Send</button>
@@ -29,20 +29,30 @@ function EmailCard() {
                         <div className="contents">
                             <div className="title">Our infomation</div>
                             <div className="text">snow@yusu.org</div>
-                            <a href="https://www.facebook.com/YUsnow/" target="_blank" rel="noopener noreferrer">
-                                <img 
-                                    src={require('../../assets/social-media-logos/facebook_white_logo.png')} 
-                                    className="image"
-                                    alt="Logo"
-                                />
-                            </a>
-                            <a href="https://www.instagram.com/yorkunisnow/" target="_blank" rel="noopener noreferrer">
-                                <img 
-                                    src={require('../../assets/social-media-logos/instagram_white_logo.png')} 
-                                    className="image"
-                                    alt="Logo"
-                                />
-                            </a>
+                            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
+                                <a href="https://www.facebook.com/YUsnow/" target="_blank" rel="noopener noreferrer">
+                                    <img 
+                                        src={require('../../assets/social-media-logos/facebook_white_logo.png')} 
+                                        className="image"
+                                        alt="Logo"
+                                    />
+                                </a>
+                                <a href="https://www.facebook.com/YUsnow/" target="_blank" rel="noopener noreferrer">
+                                    <div classname="text">www.facebook.com/YUsnow/</div>
+                                </a>
+                            </div>
+                            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
+                                <a href="https://www.instagram.com/yorkunisnow/" target="_blank" rel="noopener noreferrer">
+                                    <img 
+                                        src={require('../../assets/social-media-logos/instagram_white_logo.png')} 
+                                        className="image"
+                                        alt="Logo"
+                                    />
+                                </a>
+                                <a href="https://www.instagram.com/yorkunisnow/" target="_blank" rel="noopener noreferrer">
+                                    <div classname="text">www.instagram.com/yorkunisnow/</div>
+                                </a>
+                            </div>
                         </div> 
                     </div>
                 </div>
