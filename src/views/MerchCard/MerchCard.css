@@ -166,5 +166,7 @@
         height: auto;
         max-height: 25vw;
         max-width: 25vw;
+        border: 1px solid white;
+        border-radius: 5px;
     }
 
