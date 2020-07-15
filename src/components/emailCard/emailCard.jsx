@@ -29,17 +29,16 @@ function EmailCard() {
                         <div className="contents">
                             <div className="title">Our infomation</div>
                             <div className="text">snow@yusu.org</div>
-                            <a href="www.facebook.com/YUsnow/">
+                            <a href="https://www.facebook.com/YUsnow/" target="_blank" rel="noopener noreferrer">
                                 <img 
-                                    src={require('../../assets/social-media-logos/facebook_white_logo.jpg')} 
+                                    src={require('../../assets/social-media-logos/facebook_white_logo.png')} 
                                     className="image"
                                     alt="Logo"
-                                
                                 />
                             </a>
-                            <a href="www.instagram.com/yorkunisnow/">
+                            <a href="https://www.instagram.com/yorkunisnow/" target="_blank" rel="noopener noreferrer">
                                 <img 
-                                    src={require('../../assets/social-media-logos/instagram_white_logo.jpg')} 
+                                    src={require('../../assets/social-media-logos/instagram_white_logo.png')} 
                                     className="image"
                                     alt="Logo"
                                 />
