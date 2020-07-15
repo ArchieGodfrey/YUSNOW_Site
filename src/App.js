@@ -71,7 +71,7 @@ const onScroll = (event) => {
 
   return (
     <div className="App">
-      <Navbar scrollToRef={scrollToRef} showButtons={scrollPosition > 600} />
+      <Navbar scrollToRef={scrollToRef} scrollPosition={scrollPosition} />
       <div id="ScrollView" className="Scrollview" onScroll={onScroll}>
         <div className="block" id="top"/>
         <Dashboard scrollToRef={scrollToRef} />

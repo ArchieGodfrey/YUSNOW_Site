@@ -1,7 +1,7 @@
 import React from 'react';
 import "./navbar.css";
 
-function Navbar({ scrollToRef, showButtons}) {
+function Navbar({ scrollToRef, scrollPosition}) {
     return(
         <div className="navbar">
             <div style={{display:"flex"}}>
@@ -21,8 +21,8 @@ function Navbar({ scrollToRef, showButtons}) {
                     </div>
                 </div>
             </div>
-            {showButtons && (
-              <div className="buttonBar">
+            {scrollPosition > 600 && (
+              <div className="buttonBar" style={{ opacity: (scrollPosition - 600) * 0.01 }}>
                 <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
