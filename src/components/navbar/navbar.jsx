@@ -3,7 +3,7 @@ import "./navbar.css";
 
 function Navbar({ scrollToRef, scrollPosition}) {
     return(
-        <div className="navbar" style={scrollPosition > 500 ? { backgroundColor: `rgba(30,30,30,${(scrollPosition - 500) * 0.005})`} : {}}>
+        <div className="navbar" style={scrollPosition > 400 ? { backgroundColor: `rgba(30,30,30,${(scrollPosition - 400) * 0.0015})`} : {}}>
             <div style={{display:"flex"}}>
                 <img 
                     src={require('../../assets/YUSNOW_LOGO.png')} 
@@ -21,8 +21,8 @@ function Navbar({ scrollToRef, scrollPosition}) {
                     </div>
                 </div>
             </div>
-            {scrollPosition > 500 && (
-              <div className="buttonBar" style={{ opacity: (scrollPosition - 500) * 0.005 }}>
+            {scrollPosition > 400 && (
+              <div className="buttonBar" style={{ opacity: (scrollPosition - 400) * 0.0015 }}>
                 <button className="buttonMargin" onClick={() => scrollToRef('about')}>About</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('merchandise')}>Merchandise</button>
                 <button className="buttonMargin" onClick={() => scrollToRef('contact')}>Contact</button>
