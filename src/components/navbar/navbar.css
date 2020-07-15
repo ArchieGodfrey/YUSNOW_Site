@@ -59,7 +59,13 @@
         grid-gap: 50px;
         margin: 50px 50px 50px 0;
     }
-  
+ 
+@media (max-width: 1250px) {
+    .navbar
+        .buttonBar {
+            grid-gap: 20px;
+        }
+}
 @media (max-width: 900px) {
     .navbar
         .buttonBar {
