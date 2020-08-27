@@ -65,6 +65,16 @@ function SponsorBar() {
                     className="image"
                     alt="Logo"
                 />
+                <img
+                    src={require('../../assets/sponsor-logos/Absolute-snow.png')}
+                    className="image"
+                    alt="Logo"
+                />
+                <img 
+                    src={require('../../assets/sponsor-logos/Afterjam-white.png')}
+                    className="image"
+                    alt="Logo"
+                />
             </div>
         </div>
     )

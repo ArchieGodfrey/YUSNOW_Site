@@ -5,7 +5,7 @@ import ImageWithButtons from '../../components/ImageWithButtons/ImageWithButtons
 function SponsorCard() {
     const sponsors = [{
         name:"Chillys",
-        description:"Chilly's Bottles are a revolutionary new water bottle, built using double wall vacuum insulation, meaning they will keep cold drinks cold for up to 24 hours, and hot drinks hot for up to 18 hours.\n\n They're stylish and environmentally friendly, and due to their size you'll want to take your Chilly's bottle with you everywhere. \n\n As we all need to drink, Chilly’s Bottles really are aimed at everyone! It is the perfect bottle for taking to school, university and work. It is also fantastic for picnics, day trips, holidays and sports activities.",
+        description:"Chilly's Bottles are a revolutionary new water bottle, built using double wall vacuum insulation, meaning they will keep cold drinks cold for up to 24 hours, and hot drinks hot for up to 18 hours. They're stylish and environmentally friendly, and due to their size you'll want to take your Chilly's bottle with you everywhere. As we all need to drink, Chilly’s Bottles really are aimed at everyone! It is the perfect bottle for taking to school, university and work. It is also fantastic for picnics, day trips, holidays and sports activities.",
         image: require('../../assets/sponsor-logos/chillys_logo.png'),
         link:"www.chillysbottles.com"
     }, {
@@ -40,7 +40,7 @@ function SponsorCard() {
         link:"protectourwinters.uk"
     }, {
         name:"Ski Bartlett",
-        description:"Established in 1965, Ski Bartlett is one of the UK's most popular independent specialist ski shop with over 50 years of experience. During this period we've built up a great reputation for our technical custom boot fitting service. We stock one of the largest ranges of skis, boots, clothing and equipment available in the UK and cater for EVERY ability level, age and style of skier. Stocking an extensive range of ski boots from manufacturers such as Atomic, Salomon, Rossignol, Full Tilt, Fischer, Head, Lange, Dynafit, Scarpa, Dalbello and more means that we can always find a boot to suit your foot shape. So whether your passion is racing, freestyle, freeride, touring, telemark or recreational skiing, we can custom fit you with a boot to suit your style.",
+        description:"Established in 1965, Ski Bartlett is one of the UK's most popular independent specialist ski shop with over 50 years of experience. During this period we've built up a great reputation for our technical custom boot fitting service. We stock one of the largest ranges of skis, boots, clothing and equipment available in the UK and cater for EVERY ability level, age and style of skier.",
         image: require('../../assets/sponsor-logos/SkiBartlett.png'),
         link:"skibartlett.com"
     }, {
@@ -58,6 +58,16 @@ function SponsorCard() {
         description:"Wasteland Ski are the event producers of the Alps. Running various alpine events for university groups, their seasoned experts will be our portal to the great trips held this year. Wasteland create unique experiences through exceptional production, talent and immersive experiences.",
         image: require('../../assets/sponsor-logos/Wasteland.png'),
         link:"wastelandski.com"
+    }, {
+        name:"Absolute Snow",
+        description:"Providing quality ski and snowboard equipment since 2004, Absolute Snow now use their platform to promote getting people active and outdoors. They are highly passionate about their craft and strive for people to join them in their ways too!",
+        image: require('../../assets/sponsor-logos/Absolute-snow.png'),
+        link:"www.absolute-snow.co.uk"
+    }, {
+        name:"Afterjam",
+        description:"The AfterJam brand is the birth-child of two individuals who share a common passion for snow sports. Having met a few years ago in Val Thorens, France we have been on some very silly adventures. These have ranged from buying an old 18-seater bus and touring Europe, to starting a project that became known as AfterJam.",
+        image: require('../../assets/sponsor-logos/Afterjam-white.png'),
+        link:"www.afterjamcollective.com"
     }]
 
     const [slideIndex, setSlideIndex]=React.useState(0);

@@ -44,3 +44,4 @@ function MerchCard({ title, text, right, id, info}) {
 }
 
 export default MerchCard;
+

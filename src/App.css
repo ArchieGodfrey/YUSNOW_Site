@@ -42,7 +42,8 @@ button:hover {
     overflow: auto;
     position: relative;
     height: 100%;
-    overflow-y: scroll;;
+    overflow-y: scroll;
+    background-image: url('./background-images/Background-Image-2.jpg');
   }
 
 @media (max-width: 500px) {
@@ -62,26 +63,23 @@ button:hover {
     width: 100%;
   }
 
-@keyframes background {
+/* @keyframes background {
   0% {
     background-image: url("./background-images/Background-Image-6.jpg");
   }
-  20% {
+  25% {
     background-image: url("./background-images/Background-Image-4.jpg");
   }
-  40% {
+  50% {
     background-image: url("./background-images/Background-Image-3.jpg");
   }
-  60% {
-    background-image: url("./background-images/Background-Image-2.jpg");
-  }
-  80% {
-    background-image: url("./background-images/Background-Image-5.jpg");
-  }
-  100% {
+  75% {
     background-image: url("./background-images/Background-Image-6.jpg");
   }
-}
+  100% {
+    background-image: url("./background-images/Background-Image-5.jpg");
+  }
+} */
 
 @font-face {
   font-family: DaddyDay;
@@ -96,5 +94,4 @@ button:hover {
 a {
   text-decoration: none;
 }
-
 

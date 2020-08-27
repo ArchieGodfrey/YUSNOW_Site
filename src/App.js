@@ -8,7 +8,6 @@ import SponsorCard from './views/sponsorCard/sponsorCard';
 import ToTop from './components/toTop/toTop';
 import EmailCard from './views/emailCard/emailCard';
 
-
 function App() {
   const scrollToRef = (id) => {
     document.getElementById('ScrollView').scrollTo({ top: document.getElementById(id).offsetTop - 150, behavior: 'smooth'});
@@ -31,7 +30,7 @@ function App() {
     image: require('./assets/committee-photos/Hugh.png'),
   }, {
     name:"Oliver Driver",
-    description:"Media and Merch Officer",
+    description:"Media & Merch Officer",
     image: require('./assets/committee-photos/Olly.jpg'),
   }, {
     name:"Charlie Stent",
@@ -51,17 +50,17 @@ function App() {
     image: require('./assets/committee-photos/Jack.jpg'),
   }]
   const merch = [{
-    name:"Black Tee",
+    name:"Quarter Zip",
     description:"",
-    image: require('./assets/merchandise/Black-Tee-Temp.jpg'),
+    image: require('./assets/merchandise/Quarter-zip.png'),
 }, {
-    name:"Grey Tee",
+    name:"Folie Goose",
     description:"",
-    image: require('./assets/merchandise/Grey-tee-temp.jpg'),
+    image: require('./assets/merchandise/goose-design.png'),
 }, {
-    name:"Pink Tee",
+    name:"The Snow is Calling",
     description:"",
-    image: require('./assets/merchandise/Pink_Tee.jpg'),
+    image: require('./assets/merchandise/snow-calling.png'),
 }];
 
 const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -75,8 +74,8 @@ const onScroll = (event) => {
       <div id="ScrollView" className="Scrollview" onScroll={onScroll}>
         <div className="block" id="top"/>
         <Dashboard scrollToRef={scrollToRef} />
-        <MerchCard id="about" title="ABOUT" text="Welcome to the University of York Ski and Snowboard society. We are an inclusive club that offers some of the best socials on campus, ski races and most importantly... bi-annual ski trips for our members!" right info={committee}/>
-        <MerchCard id="merchandise" title="MERCHANDISE" text="The following merchandise can be bought through the club, by either sending us an email or messaging our social media pages." info={merch}/>
+        <MerchCard id="about" title="ABOUT" text="Welcome to the University Of York Ski and Snowboard Society. Come and get involved in some of the best socials at York, try out one of our training sessions or join us on our trips to the alps! Our trips are held during the Christmas and Easter holidays, ran securely through Wasteland ski, ensuring that everything is sorted for you - hassle free. Think you're up for racing for us? Come down to one of our trainings or message our race captain for more information on the chance of racing nationally." right info={committee}/>
+        <MerchCard id="merchandise" title="MERCHANDISE" text="The following merchandise can be bought through the club, by either sending us an email or messaging our social media pages. We offer a range of sizes and like to keep our designs fresh and are printed to a high quality. The following design is in production, so if this is what you're looking for, message our media & merch sec to find out when the release is!" info={merch}/>
         <EmailCard id="contact"/>
         <SponsorCard id="sponsorcard"/>
         <ToTop scrollToRef={scrollToRef} />

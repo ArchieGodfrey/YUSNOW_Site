@@ -8,7 +8,7 @@ function EmailCard() {
                 <div className="header">CONTACT</div>
                 <div className="bar"/>
                     <div class="row">
-                        <div style={{ display:"flex", flex: 2 }}>
+                        {/* <div style={{ display:"flex", flex: 2 }}>
                             <div className="contents">
                               <form action="mailto:oliver.driver100@gmail.com" method="post" enctype="text/plain">
                                 <input className="input" type="text" name="name" placeholder="Name"/>
@@ -17,7 +17,7 @@ function EmailCard() {
                                 <button className="buttonMargin">Send</button>
                               </form>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="contents margin">
                             <div className="title">Our infomation</div>
                             <a>
